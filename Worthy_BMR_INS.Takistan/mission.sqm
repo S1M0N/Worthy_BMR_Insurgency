@@ -188,7 +188,7 @@ class Mission
 	randomSeed=4828189;
 	class Intel
 	{
-		briefingName="Worthy_BMR_INS_v1.8.Takistan";
+		briefingName="Worthy_BMR_INS_v1.8.1.Takistan";
 		overviewText="Eliminate Armed Rebellion Against NATO forces. Gather Intel on Location of Enemy Ammo Cache and Destroy it.";
 		resistanceWest=0;
 		resistanceEast=1;
@@ -225,7 +225,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="Server";
-					init="{_x setmarkeralphalocal 0} foreach [""Respawn_East"",""Respawn_West"",""Helicopters"",""Mechanized"",""HelicopterRepair"",""VehicleMaintenance"",""AircraftMaintenance"",""Halo"",""IEDa"",""IED1"",""IED2"",""IED3"",""IED4"",""IED5"",""IED6"",""IED7"",""IED8"",""IED9"",""IED10"",""IED11"",""IED12"",""IED13"",""IED14"",""IED15"",""IED16"",""IED17"",""IED18"",""IED19"",""IED20"",""IED21"",""sidemiss1"",""sidemiss2"",""sidemiss3"",""sidemiss4"",""sidemiss5"",""sidemiss6"",""sidemiss7"",""sidemiss8"",""sidemiss9"",""sidemiss10"",""sidemiss11"",""sidemiss12"",""sidemiss13"",""sidemiss14"",""sidemiss15"",""civmkr1"",""civmkr2"",""civmkr3"",""civmkr4"",""civmkr5"",""civmkr6"",""civmkr7"",""civmkr8"",""civmkr9"",""civmkr10"",""civmkr11"",""civmkr12"",""civmkr13"",""civmkr14"",""civmkr15"",""civmkr16""];";
+					init="{_x setmarkeralphalocal 0} foreach [""Respawn_East"",""Respawn_West"",""Helicopters"",""Mechanized"",""HelicopterRepair"",""VehicleMaintenance"",""AircraftMaintenance"",""Halo"",""IEDa"",""IED1"",""IED2"",""IED3"",""IED4"",""IED5"",""IED6"",""IED7"",""IED8"",""IED9"",""IED10"",""IED11"",""IED12"",""IED13"",""IED14"",""IED15"",""IED16"",""IED17"",""IED18"",""IED19"",""IED20"",""IED21"",""IED22"",""IED23"",""sidemiss1"",""sidemiss2"",""sidemiss3"",""sidemiss4"",""sidemiss5"",""sidemiss6"",""sidemiss7"",""sidemiss8"",""sidemiss9"",""sidemiss10"",""sidemiss11"",""sidemiss12"",""sidemiss13"",""sidemiss14"",""sidemiss15"",""civmkr1"",""civmkr2"",""civmkr3"",""civmkr4"",""civmkr5"",""civmkr6"",""civmkr7"",""civmkr8"",""civmkr9"",""civmkr10"",""civmkr11"",""civmkr12"",""civmkr13"",""civmkr14"",""civmkr15"",""civmkr16"",""civmkr35""];";
 				};
 			};
 		};
@@ -832,7 +832,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_ModuleMap";
 							typeName="MapShake";
 						};
@@ -968,7 +968,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12838.151,306.138,223.40012};
+					position[]={12838.151,304.24759,238.45062};
 					class args
 					{
 						items=9;
@@ -1066,6 +1066,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.44999999;
+					text="PLS";
 					description="Platoon Sergeant";
 				};
 				class Item2
@@ -1091,6 +1092,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.44999999;
+					text="PLJTAC";
 					description="Platoon JTAC/RTO";
 				};
 			};
@@ -1125,6 +1127,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.55000001;
+					text="worthy112";
 					description="Alpha Squad RTO";
 				};
 				class Item2
@@ -1148,6 +1151,7 @@ class Mission
 					vehicle="B_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy113";
 					description="Alpha Squad AR";
 				};
 				class Item4
@@ -1159,6 +1163,7 @@ class Mission
 					vehicle="B_Soldier_A_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy114";
 					description="Alpha Squad AAR";
 				};
 				class Item5
@@ -1170,6 +1175,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.5;
+					text="worthy115";
 					description="Alpha Squad Rifleman";
 				};
 				class Item6
@@ -1181,6 +1187,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy116";
 					description="Alpha Squad RAT";
 				};
 				class Item7
@@ -1192,6 +1199,7 @@ class Mission
 					vehicle="B_Soldier_GL_F";
 					player="PLAY CDG";
 					skill=0.5;
+					text="worthy117";
 					description="Alpha Squad Grenadier";
 				};
 				class Item8
@@ -1203,6 +1211,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.55000001;
+					text="worthy118";
 					description="Alpha Squad Engineer";
 				};
 			};
@@ -1237,6 +1246,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.55000001;
+					text="worthy122";
 					description="Bravo Squad RTO";
 				};
 				class Item2
@@ -1260,6 +1270,7 @@ class Mission
 					vehicle="B_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy123";
 					description="Bravo Squad AR";
 				};
 				class Item4
@@ -1271,6 +1282,7 @@ class Mission
 					vehicle="B_Soldier_A_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy124";
 					description="Bravo Squad AAR";
 				};
 				class Item5
@@ -1282,6 +1294,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.5;
+					text="worthy125";
 					description="Bravo Squad Rifleman";
 				};
 				class Item6
@@ -1293,6 +1306,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy126";
 					description="Bravo Squad RAT";
 				};
 				class Item7
@@ -1304,6 +1318,7 @@ class Mission
 					vehicle="B_Soldier_GL_F";
 					player="PLAY CDG";
 					skill=0.5;
+					text="worthy127";
 					description="Bravo Squad Grenadier";
 				};
 				class Item8
@@ -1315,6 +1330,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.55000001;
+					text="worthy128";
 					description="Bravo Squad Engineer";
 				};
 			};
@@ -1349,6 +1365,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.55000001;
+					text="worthy132";
 					description="Recon Squad RTO";
 				};
 				class Item2
@@ -1357,10 +1374,10 @@ class Mission
 					azimut=125.311;
 					id=43;
 					side="WEST";
-					vehicle="B_medic_F";
+					vehicle="B_recon_medic_F";
 					player="PLAY CDG";
 					skill=0.5;
-					text="medic41";
+					text="medic4";
 					description="Recon Squad Medic";
 				};
 				class Item3
@@ -1372,6 +1389,7 @@ class Mission
 					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy133";
 					description="Recon Squad Scout";
 				};
 				class Item4
@@ -1383,6 +1401,7 @@ class Mission
 					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.44999999;
+					text="worthy134";
 					description="Recon Squad Scout";
 				};
 				class Item5
@@ -1394,6 +1413,7 @@ class Mission
 					vehicle="B_recon_LAT_F";
 					player="PLAY CDG";
 					skill=0.5;
+					text="worthy135";
 					description="Recon Squad SAT";
 				};
 				class Item6
@@ -1402,10 +1422,10 @@ class Mission
 					azimut=125.311;
 					id=47;
 					side="WEST";
-					vehicle="B_recon_exp_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					text="demo";
+					text="worthy136";
 					description="Recon Squad Demo/Engineer";
 				};
 				class Item7
@@ -1417,6 +1437,7 @@ class Mission
 					vehicle="B_recon_M_F";
 					player="PLAY CDG";
 					skill=0.5;
+					text="worthy137";
 					description="Recon Squad Marksman/Spotter";
 				};
 				class Item8
@@ -1428,6 +1449,7 @@ class Mission
 					vehicle="B_Recon_Sharpshooter_F";
 					player="PLAY CDG";
 					skill=0.55000001;
+					text="worthy138";
 					description="Recon Squad Sharpshooter";
 				};
 			};
@@ -1675,7 +1697,7 @@ class Mission
 			vehicle="rhsusf_m1025_d_s_m2";
 			skill=0.60000002;
 			text="hmv1";
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item1
 		{
@@ -1685,7 +1707,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d_s_m2";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item2
 		{
@@ -1695,7 +1718,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d_s_m2";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv3";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item3
 		{
@@ -1705,7 +1729,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d_s_m2";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv4";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item4
 		{
@@ -1715,7 +1740,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d_s_Mk19";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv5";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item5
 		{
@@ -1725,7 +1751,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d_s_Mk19";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv6";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item6
 		{
@@ -1736,7 +1763,7 @@ class Mission
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
 			text="mh61";
-			init="_nul = [this, 2, 1, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+			init="_nul = [this, 6, 3, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
 		};
 		class Item7
 		{
@@ -1746,7 +1773,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_armed_F";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+			text="ah62";
+			init="_nul = [this, 6, 5, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
 		};
 		class Item8
 		{
@@ -1756,7 +1784,8 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_M2A2_BUSKI";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc5";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item9
 		{
@@ -1766,7 +1795,8 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_M2A2_BUSKI";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc4";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item10
 		{
@@ -1776,7 +1806,8 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_M2A3_BUSKIII";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc7";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item11
 		{
@@ -1786,7 +1817,8 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_M2A3_BUSKIII";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc6";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item12
 		{
@@ -1822,51 +1854,56 @@ class Mission
 		class Item15
 		{
 			position[]={7946.606,296.15997,1905.8149};
-			azimut=117.67234;
+			azimut=117.672;
 			id=77;
 			side="EMPTY";
 			vehicle="RHS_UH1Y_UNARMED_d";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="uh2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item16
 		{
 			position[]={8214.6328,296.04001,2078.8994};
-			azimut=-30.763138;
+			azimut=-30.7631;
 			id=78;
 			side="EMPTY";
 			vehicle="rhsusf_M1083A1P2_B_M2_d_fmtv_usarmy";
 			skill=0.60000002;
 			text="MHQ_1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item17
 		{
 			position[]={8218.8809,296.04001,2081.0762};
-			azimut=-30.763138;
+			azimut=-30.7631;
 			id=79;
 			side="EMPTY";
 			vehicle="rhsusf_M1083A1P2_B_M2_d_open_fmtv_usarmy";
 			skill=0.60000002;
 			text="MHQ_2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item18
 		{
 			position[]={8280.3691,296.04001,2107.958};
-			azimut=329.96234;
+			azimut=329.96201;
 			id=80;
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.60000002;
+			text="atv1";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item19
 		{
 			position[]={8277.1123,296.04001,2106.0559};
-			azimut=329.96234;
+			azimut=329.96201;
 			id=81;
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.60000002;
+			text="atv2";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item20
@@ -1878,7 +1915,8 @@ class Mission
 			vehicle="rhsusf_m998_d_s_4dr";
 			leader=1;
 			skill=0.5;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv7";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item21
 		{
@@ -1889,7 +1927,8 @@ class Mission
 			vehicle="rhsusf_m998_d_s_4dr";
 			leader=1;
 			skill=0.5;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="hmv8";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item22
 		{
@@ -1925,13 +1964,14 @@ class Mission
 		class Item25
 		{
 			position[]={7912.353,296.09378,1878.1986};
-			azimut=149.18561;
+			azimut=149.186;
 			id=87;
 			side="EMPTY";
 			vehicle="RHS_UH1Y_d";
 			leader=1;
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf""; if (isServer) then {_nul = [this] spawn {_veh = _this select 0; waitUntil {time > 3};};}";
+			text="uh3";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf""; if (isServer) then {_nul = [this] spawn {_veh = _this select 0; waitUntil {time > 3};};}";
 		};
 		class Item26
 		{
@@ -1951,7 +1991,8 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_UH60M";
 			skill=0.55000001;
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf""; if (isServer) then {_nul = [this] spawn {_veh = _this select 0; waitUntil {time > 3};};}";
+			text="bh1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf""; if (isServer) then {_nul = [this] spawn {_veh = _this select 0; waitUntil {time > 3};};}";
 		};
 		class Item28
 		{
@@ -1972,6 +2013,7 @@ class Mission
 			vehicle="B_UAV_01_F";
 			isUAV=1;
 			skill=0.60000002;
+			text="dart1";
 			init="_nul = [this, 2, 1, {[_this] call add_UAV_crew}] execVM ""vehrespawn.sqf""; createVehicleCrew this";
 		};
 		class Item30
@@ -1982,6 +2024,7 @@ class Mission
 			vehicle="B_UAV_01_F";
 			isUAV=1;
 			skill=0.60000002;
+			text="dart3";
 			init="_nul = [this, 2, 1, {[_this] call add_UAV_crew}] execVM ""vehrespawn.sqf""; createVehicleCrew this";
 		};
 		class Item31
@@ -1992,6 +2035,7 @@ class Mission
 			vehicle="B_UAV_01_F";
 			isUAV=1;
 			skill=0.60000002;
+			text="dart2";
 			init="_nul = [this, 2, 1, {[_this] call add_UAV_crew}] execVM ""vehrespawn.sqf""; createVehicleCrew this";
 		};
 		class Item32
@@ -2017,12 +2061,13 @@ class Mission
 		class Item34
 		{
 			position[]={8218.8936,296.04001,2063.5127};
-			azimut=508.31934;
+			azimut=508.319;
 			id=96;
 			side="EMPTY";
 			vehicle="B_Truck_01_Repair_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="rep1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item35
 		{
@@ -2032,7 +2077,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_fuel_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="fuel1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item36
 		{
@@ -2042,6 +2088,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.55000001;
+			text="atv7";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
@@ -2053,6 +2100,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.55000001;
+			text="atv6";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
@@ -2064,6 +2112,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.55000001;
+			text="atv5";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
@@ -2075,6 +2124,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.55000001;
+			text="atv4";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
@@ -2140,6 +2190,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Quadbike_01_F";
 			skill=0.55000001;
+			text="atv3";
 			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
@@ -2231,22 +2282,24 @@ class Mission
 		class Item56
 		{
 			position[]={8209.5488,296.04001,2075.2126};
-			azimut=332.21884;
+			azimut=332.21899;
 			id=118;
 			side="EMPTY";
 			vehicle="B_APC_Tracked_01_CRV_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="rep2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item57
 		{
 			position[]={7925.5635,296.2247,1892.0991};
-			azimut=149.99814;
+			azimut=149.998;
 			id=119;
 			side="EMPTY";
 			vehicle="RHS_AH64D_wd_AA";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="ah1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item58
 		{
@@ -2416,13 +2469,13 @@ class Mission
 		class Item75
 		{
 			position[]={8215.0479,296.04001,2061.6758};
-			azimut=508.81982;
+			azimut=508.82001;
 			id=137;
 			side="EMPTY";
 			vehicle="B_Truck_01_medical_F";
 			skill=0.60000002;
 			text="medTRK";
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 			syncId=6;
 			synchronizations[]={1};
 		};
@@ -4725,17 +4778,19 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_UH60M";
 			skill=0.55000001;
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf""; if (isServer) then {_nul = [this] spawn {_veh = _this select 0; waitUntil {time > 3};};}";
+			text="bh2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf""; if (isServer) then {_nul = [this] spawn {_veh = _this select 0; waitUntil {time > 3};};}";
 		};
 		class Item288
 		{
-			position[]={7953.1953,296.29834,1924.5366};
+			position[]={7954.7354,296.26016,1923.9857};
 			azimut=109.119;
 			id=350;
 			side="EMPTY";
 			vehicle="RHS_UH1Y_UNARMED_d";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="uh1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item289
 		{
@@ -4746,7 +4801,7 @@ class Mission
 			vehicle="B_Heli_Transport_03_F";
 			skill=0.60000002;
 			text="heavyCH";
-			init="_nul = [this, 2, 1, {}] execVM ""vehrespawn.sqf"";";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item290
 		{
@@ -4756,7 +4811,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_armed_F";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+			text="ah61";
+			init="_nul = [this, 6, 3, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
 		};
 		class Item291
 		{
@@ -4766,7 +4822,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+			text="mh62";
+			init="_nul = [this, 6, 3, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
 		};
 		class Item292
 		{
@@ -4776,7 +4833,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+			text="mh63";
+			init="_nul = [this, 6, 3, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
 		};
 		class Item293
 		{
@@ -4786,7 +4844,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 2, 1, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+			text="mh64";
+			init="_nul = [this, 6, 3, {[_this] call add_veh_flare}] execVM ""vehrespawn.sqf"";this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
 		};
 		class Item294
 		{
@@ -4797,7 +4856,7 @@ class Mission
 			vehicle="RHS_M6";
 			skill=0.60000002;
 			text="aaa1";
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item295
 		{
@@ -4807,7 +4866,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m113d_usarmy";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item296
 		{
@@ -4817,7 +4877,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m113d_usarmy";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item297
 		{
@@ -4827,7 +4888,8 @@ class Mission
 			side="EMPTY";
 			vehicle="rhsusf_m113d_usarmy";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="apc3";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item298
 		{
@@ -4838,7 +4900,7 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="amv1";
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item299
 		{
@@ -4848,7 +4910,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="amv2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item300
 		{
@@ -4858,7 +4921,8 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_M6";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="aaa2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item301
 		{
@@ -4877,61 +4941,67 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_ammo_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="ammo1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item303
 		{
 			position[]={8182.6167,296.04001,2099.2129};
-			azimut=-27.389174;
+			azimut=-27.3892;
 			id=365;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.55000001;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="tech1";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
 		class Item304
 		{
 			position[]={8178.5854,296.04001,2096.8335};
-			azimut=-30.862783;
+			azimut=-30.862801;
 			id=366;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.55000001;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="tech2";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
 		class Item305
 		{
 			position[]={8174.3638,296.04001,2094.5957};
-			azimut=-30.862783;
+			azimut=-30.862801;
 			id=367;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.55000001;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="tech3";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
 		class Item306
 		{
 			position[]={8170.2837,296.04001,2092.0281};
-			azimut=-30.862783;
+			azimut=-30.862801;
 			id=368;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.55000001;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="tech4";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
 		class Item307
 		{
 			position[]={8166.0146,296.04001,2089.1257};
-			azimut=-30.862783;
+			azimut=-30.862801;
 			id=369;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.55000001;
-			init="_nul = [this, 60, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="tech5";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 			description="Engineer";
 		};
 		class Item308
@@ -5020,7 +5090,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_APC_Tracked_01_AA_F";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="aaa3";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item316
 		{
@@ -5030,7 +5101,8 @@ class Mission
 			side="EMPTY";
 			vehicle="B_APC_Tracked_01_AA_F";
 			skill=0.60000002;
-			init="_nul = [this, 30, 1, {}] execVM ""vehrespawn.sqf"";";
+			text="aaa4";
+			init="_nul = [this, 6, 3, {}] execVM ""vehrespawn.sqf"";";
 		};
 		class Item317
 		{
@@ -7476,7 +7548,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=413;
+		items=430;
 		class Item0
 		{
 			position[]={1428.552,220.87392,3590.0149};
@@ -10078,12 +10150,12 @@ class Mission
 		};
 		class Item288
 		{
-			position[]={9234.2969,166.29123,9906.4355};
+			position[]={9300.4023,163.96486,10050.28};
 			name="mrkr222";
 			markerType="RECTANGLE";
 			type="Empty";
-			a=50;
-			b=50;
+			a=200;
+			b=150;
 		};
 		class Item289
 		{
@@ -10910,33 +10982,13 @@ class Mission
 		};
 		class Item381
 		{
-			position[]={8256.7021,296.04001,2147.1926};
-			name="Respawn_West_1";
-			text="BASE";
-			type="flag_NATO";
-			colorName="ColorBlue";
-			a=0.5;
-			b=0.5;
-		};
-		class Item382
-		{
-			position[]={8247.7129,296.04001,2152.4507};
-			name="Respawn_West_1_1";
-			text="BASE";
-			type="flag_NATO";
-			colorName="ColorBlue";
-			a=0.5;
-			b=0.5;
-		};
-		class Item383
-		{
 			position[]={7907.752,296.04758,1867.6908};
 			name="Helicopters_1";
 			text="Attack Helicopters";
 			type="b_air";
 			colorName="ColorWEST";
 		};
-		class Item384
+		class Item382
 		{
 			position[]={232.57422,256.89832,2847.6494};
 			name="sidemiss12";
@@ -10944,7 +10996,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=1;
 		};
-		class Item385
+		class Item383
 		{
 			position[]={11485.37,276.25281,8193.5625};
 			name="sidemiss13";
@@ -10952,7 +11004,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=1;
 		};
-		class Item386
+		class Item384
 		{
 			position[]={2082.8926,361.92868,349.18066};
 			name="sidemiss14";
@@ -10960,7 +11012,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=1;
 		};
-		class Item387
+		class Item385
 		{
 			position[]={6966.7803,121.47535,8856.1387};
 			name="sidemiss15";
@@ -10968,7 +11020,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=1;
 		};
-		class Item388
+		class Item386
 		{
 			position[]={2150.0884,361.2504,250.41699};
 			name="mrkr309";
@@ -10977,7 +11029,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item389
+		class Item387
 		{
 			position[]={2149.791,363.19125,349.79556};
 			name="mrkr311";
@@ -10986,7 +11038,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item390
+		class Item388
 		{
 			position[]={2050.3459,364.27847,349.6904};
 			name="mrkr312";
@@ -10995,16 +11047,16 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item391
+		class Item389
 		{
 			position[]={2749.958,370.85666,849.77368};
 			name="mrkr315";
 			markerType="RECTANGLE";
 			type="Empty";
-			a=52;
-			b=52;
+			a=50;
+			b=50;
 		};
-		class Item392
+		class Item390
 		{
 			position[]={3649.7097,357.10992,1150.0885};
 			name="mrkr320";
@@ -11013,25 +11065,25 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item393
+		class Item391
 		{
-			position[]={3249.7056,399.71585,850.8252};
+			position[]={3249.9063,399.9848,850.02332};
 			name="mrkr317";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
 		};
-		class Item394
+		class Item392
 		{
-			position[]={2850.0815,371.84015,850.66937};
+			position[]={2850.0815,371.79337,849.88123};
 			name="mrkr316";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
 		};
-		class Item395
+		class Item393
 		{
 			position[]={3565.115,360.88202,1181.2056};
 			name="IED17";
@@ -11040,16 +11092,16 @@ class Mission
 			a=250;
 			b=250;
 		};
-		class Item396
+		class Item394
 		{
-			position[]={3249.6843,391.94507,950.25122};
+			position[]={3249.8845,391.93323,950.05133};
 			name="mrkr318";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
 		};
-		class Item397
+		class Item395
 		{
 			position[]={2034.9939,365.38632,330.4494};
 			name="civmkr33";
@@ -11059,7 +11111,7 @@ class Mission
 			b=150;
 			angle=2.1256585;
 		};
-		class Item398
+		class Item396
 		{
 			position[]={3150.1331,386.12958,849.93903};
 			name="mrkr319";
@@ -11068,7 +11120,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item399
+		class Item397
 		{
 			position[]={2049.8672,361.15912,249.69177};
 			name="mrkr310";
@@ -11077,25 +11129,25 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item400
+		class Item398
 		{
-			position[]={1852.1422,383.91772,350.25256};
+			position[]={1850.0098,384.2471,349.89703};
 			name="mrkr314";
 			markerType="RECTANGLE";
 			type="Empty";
-			a=53;
+			a=50;
 			b=50;
 		};
-		class Item401
+		class Item399
 		{
-			position[]={1948.6288,369.83716,350.25555};
+			position[]={1950.0505,369.71915,350.07703};
 			name="mrkr313";
 			markerType="RECTANGLE";
 			type="Empty";
-			a=52;
+			a=50;
 			b=50;
 		};
-		class Item402
+		class Item400
 		{
 			position[]={3649.7673,364.94473,1250.1};
 			name="mrkr321";
@@ -11104,7 +11156,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item403
+		class Item401
 		{
 			position[]={3549.7463,363.6257,1249.7688};
 			name="mrkr322";
@@ -11113,7 +11165,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item404
+		class Item402
 		{
 			position[]={3550.4084,367.61429,1349.7888};
 			name="mrkr323";
@@ -11122,7 +11174,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item405
+		class Item403
 		{
 			position[]={3550.0767,372.17746,1449.9269};
 			name="mrkr324";
@@ -11131,7 +11183,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item406
+		class Item404
 		{
 			position[]={3549.9048,361.49362,1149.7421};
 			name="mrkr325";
@@ -11140,7 +11192,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item407
+		class Item405
 		{
 			position[]={2077.6174,362.58582,357.46292};
 			name="IED18";
@@ -11149,7 +11201,7 @@ class Mission
 			a=250;
 			b=250;
 		};
-		class Item408
+		class Item406
 		{
 			position[]={6097.5059,292.76294,1166.6792};
 			name="IED19";
@@ -11158,7 +11210,7 @@ class Mission
 			a=250;
 			b=250;
 		};
-		class Item409
+		class Item407
 		{
 			position[]={6534.96,336.87289,2002.7341};
 			name="IED20";
@@ -11167,7 +11219,7 @@ class Mission
 			a=250;
 			b=250;
 		};
-		class Item410
+		class Item408
 		{
 			position[]={10160.005,347.9671,2358.3411};
 			name="IED21";
@@ -11177,7 +11229,7 @@ class Mission
 			b=300;
 			angle=-94.788734;
 		};
-		class Item411
+		class Item409
 		{
 			position[]={3577.4768,361.23309,1215.422};
 			name="civmkr34";
@@ -11187,7 +11239,7 @@ class Mission
 			b=150;
 			angle=75.788597;
 		};
-		class Item412
+		class Item410
 		{
 			position[]={8242.4834,296.02261,2170.7466};
 			name="Veh_Load";
@@ -11195,26 +11247,182 @@ class Mission
 			type="b_service";
 			colorName="ColorWEST";
 		};
+		class Item411
+		{
+			position[]={8087.5127,296.04001,1966.4001};
+			name="baseMkrCntr";
+			type="Empty";
+		};
+		class Item412
+		{
+			position[]={9350.3096,360.89505,1749.8091};
+			name="mrkr326";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item413
+		{
+			position[]={9250.2861,347.81314,1750.1014};
+			name="mrkr327";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item414
+		{
+			position[]={9250.2549,342.62799,1850.1556};
+			name="mrkr328";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item415
+		{
+			position[]={9150.1074,331.97275,1850.083};
+			name="mrkr329";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item416
+		{
+			position[]={9250.21,330.56668,1949.9296};
+			name="mrkr330";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item417
+		{
+			position[]={9150.1074,326.0275,1949.9297};
+			name="mrkr331";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item418
+		{
+			position[]={9263.415,345.22812,1828.5122};
+			name="civmkr35";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=200;
+			b=140;
+			angle=53.445599;
+		};
+		class Item419
+		{
+			position[]={9210.9131,331.11386,1918.3409};
+			name="IED22";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=300;
+			b=150;
+			angle=55.111198;
+		};
+		class Item420
+		{
+			position[]={9049.709,307.9567,2206.9116};
+			name="mrkr332";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item421
+		{
+			position[]={4150.0078,30.719666,11449.869};
+			name="mrkr333";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item422
+		{
+			position[]={4150.1348,25.504023,11750.252};
+			name="mrkr336";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item423
+		{
+			position[]={4250.1206,50.840324,11750.118};
+			name="mrkr337";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item424
+		{
+			position[]={4149.9268,15.441836,11850.135};
+			name="mrkr338";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item425
+		{
+			position[]={4250.208,43.105312,11849.759};
+			name="mrkr339";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item426
+		{
+			position[]={4150.0786,25.730738,11649.995};
+			name="mrkr335";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item427
+		{
+			position[]={4185.5464,29.38526,11652.166};
+			name="IED23";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=300;
+			b=150;
+			angle=-95.589302;
+		};
+		class Item428
+		{
+			position[]={4150.1846,26.59416,11549.862};
+			name="mrkr334";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item429
+		{
+			position[]={4650.2754,4.700809,12350.355};
+			name="mrkr340";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
 	};
 	class Sensors
 	{
-		items=10;
+		items=8;
 		class Item0
-		{
-			position[]={8077.3135,296.04001,1988.6766};
-			a=5;
-			b=5;
-			activationBy="ANY";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="(""LandVehicle"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
-			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
-			class Effects
-			{
-			};
-		};
-		class Item1
 		{
 			position[]={8140.0566,296.04001,1910.8518};
 			a=5;
@@ -11230,11 +11438,13 @@ class Mission
 			{
 			};
 		};
-		class Item2
+		class Item1
 		{
-			position[]={8074.0566,296.04001,1986.8662};
+			position[]={8075.6523,296.04001,1987.8497};
 			a=5;
 			b=5;
+			angle=-120.0754;
+			rectangular=1;
 			activationBy="ANY";
 			repeating=1;
 			interruptable=1;
@@ -11245,7 +11455,7 @@ class Mission
 			{
 			};
 		};
-		class Item3
+		class Item2
 		{
 			position[]={7823.6982,296.04001,1788.3472};
 			a=42;
@@ -11262,7 +11472,7 @@ class Mission
 			{
 			};
 		};
-		class Item4
+		class Item3
 		{
 			position[]={5069.0972,362.72089,1317.0592};
 			a=10;
@@ -11277,7 +11487,7 @@ class Mission
 			{
 			};
 		};
-		class Item5
+		class Item4
 		{
 			position[]={8027.8843,296.04001,1909.4116};
 			a=450;
@@ -11297,7 +11507,7 @@ class Mission
 			{
 			};
 		};
-		class Item6
+		class Item5
 		{
 			position[]={5068.6836,362.5264,1340.2129};
 			a=0;
@@ -11316,7 +11526,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item6
 		{
 			position[]={8027.8853,296.04001,1908.911};
 			a=450;
@@ -11336,23 +11546,7 @@ class Mission
 			{
 			};
 		};
-		class Item8
-		{
-			position[]={8277.8486,296.04465,2170.2017};
-			a=5;
-			b=5;
-			angle=93.095467;
-			activationBy="ANY";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="(""LandVehicle"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
-			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
-			class Effects
-			{
-			};
-		};
-		class Item9
+		class Item7
 		{
 			position[]={8242.415,296.02191,2170.7058};
 			a=5;

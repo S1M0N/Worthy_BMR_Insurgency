@@ -89,25 +89,27 @@ switch (_objsel) do
 	{
 	_type = objective_objs select 4; [_newZone,_type] execVM "Objectives\mine_field.sqf";
 	};
+	/*
 	case "deliver_supplies":
 	{
 	_type = objective_objs select 5; [_newZone,_type] execVM "Objectives\delivery.sqf";
 	};
+	*/
 	case "destroy_convoy":
 	{
-	_type = objective_objs select 6; [_newZone,_type] execVM "Objectives\sup_convoy.sqf";
+	_type = objective_objs select 5; [_newZone,_type] execVM "Objectives\sup_convoy.sqf";
 	};
 	case "destroy_armed_convoy":
 	{
-	_type = objective_objs select 7; [_newZone,_type] execVM "Objectives\armed_convoy.sqf";
+	_type = objective_objs select 6; [_newZone,_type] execVM "Objectives\armed_convoy.sqf";
 	};
 	case "destroy_mortar_squad":
 	{
-	_type = objective_objs select 8; [_newZone,_type] execVM "Objectives\mortar_squad.sqf";
+	_type = objective_objs select 7; [_newZone,_type] execVM "Objectives\mortar_squad.sqf";
 	};
 	case "c_n_h":
 	{
-	_type = objective_objs select 9; [_newZone,_type] execVM "Objectives\capture_n_hold.sqf";
+	_type = objective_objs select 8; [_newZone,_type] execVM "Objectives\capture_n_hold.sqf";
 	};
 };
 

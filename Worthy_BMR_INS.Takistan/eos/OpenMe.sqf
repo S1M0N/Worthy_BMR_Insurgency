@@ -228,7 +228,7 @@ null = [["mrkr218"],[1,1,InfPb],[0,0],[0,0],[0],[0],[0,0],[_fac2,0,AI_SpawnDis,_
 null = [["mrkr219"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
 null = [["mrkr220"],[0,0],[2,2,InfPb],[0,0],[0],[0],[0,0],[_fac1,1,AI_SpawnDis,_side,true]] call EOS_Spawn;//invisible
 null = [["mrkr221"],[0,0],[2,2,InfPb],[0,0],[0],[0],[0,0],[_fac2,1,AI_SpawnDis,_side,true]] call EOS_Spawn;//invisible
-null = [["mrkr222"],[0,0],[0,0],[1,3],[0],[0],[0,0],[_fac2,1,AI_SpawnDis,_side,true]] call EOS_Spawn;//invisible
+null = [["mrkr222"],[1,2,100],[4,2,100],[2,3],[5,100],[5],[3,2],[_fac2,1,AI_SpawnDis,_side,true]] call EOS_Spawn;//invisible
 null = [["mrkr223"],[2,2,InfPb],[2,1,InfPb],[0,0],[0],[0],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
 null = [["mrkr224"],[1,2,InfPb],[1,1,InfPb],[0,0],[0],[0],[0,0],[_fac1,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
 null = [["mrkr225"],[1,2,InfPb],[2,2,InfPb],[0,0],[0],[0],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
@@ -329,3 +329,22 @@ null = [["mrkr322"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[0],[0,0],[_fac2,0,AI_Spaw
 null = [["mrkr323"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[0],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
 null = [["mrkr324"],[0,0],[1,1,InfPb],[0,0],[1,MecArmPb],[0],[0,0],[_fac1,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
 null = [["mrkr325"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[0],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+
+null = [["mrkr326"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr327"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr328"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr329"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr330"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr331"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr332"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,1,AI_SpawnDis,_side,true]] call EOS_Spawn;//invisible
+
+null = [["mrkr333"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr334"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr335"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr336"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr337"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr338"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr339"],[1,1,InfPb],[1,2,InfPb],[0,0],[0],[1],[0,0],[_fac2,0,AI_SpawnDis,_side,true]] call EOS_Spawn;
+null = [["mrkr340"],[1,1,InfPb],[2,2,InfPb],[1,3],[1,MecArmPb],[0],[0,0],[_fac2,1,AI_SpawnDis,_side,true]] call EOS_Spawn;//invisible
+
+

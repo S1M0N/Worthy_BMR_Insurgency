@@ -107,7 +107,7 @@ if (DebugEnabled > 0) then {
 
 	// Player event handlers //
 	[] spawn {waitUntil {!isNull (findDisplay 46)}; (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call DH_fnc_keyPresses"];};
-	player addEventHandler ["killed", {_nul = _this call killedInfo_fnc}];
+	//player addEventHandler ["killed", {_nul = _this call killedInfo_fnc}];
 	player addEventHandler ["Respawn", {[] spawn JIG_p_actions_resp;}];
 	if (INS_p_rev isEqualTo 4) then
 	{

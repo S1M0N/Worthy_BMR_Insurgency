@@ -114,7 +114,7 @@ if (alive _crate) then {
 
 sleep 1;
 if (!alive _crate || isNull _crate) then {call fnc_SR_SD_delMkr};
-sleep 3;
+sleep 300;
 
 if ((!alive _crate || isNull _crate) && (_playertype in INS_W_PlayerJTAC)) then {
 	player execVM "supplyDrop\addAction.sqf";

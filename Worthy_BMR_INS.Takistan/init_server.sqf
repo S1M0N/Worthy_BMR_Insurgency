@@ -54,7 +54,7 @@ if (!isNil "MHQ_3") then {
 	{INS_p_rev isEqualTo 4 or
 	{INS_p_rev isEqualTo 5}}}) then
 	{
-		_nul = [MHQ_3, 60, 1, {}] execVM "vehrespawn.sqf";
+		_nul = [MHQ_3, 6, 3, {}] execVM "vehrespawn.sqf";
 	};
 };
 {

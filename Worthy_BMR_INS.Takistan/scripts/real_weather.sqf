@@ -72,7 +72,7 @@
 		};
 
 		case "RAIN": {
-			wcweather = [1, 0, 1, [random 3, random 3, true], date];
+			wcweather = [0, 0, 0, [random 3, random 3, true], date];
 		};
 
 		default {
@@ -90,7 +90,7 @@
 			if(wcweatherstart) then {
 				wcweatherstart = false;
 				skipTime -24;
-				86400 setRain (wcweather select 0);
+				86400 setRain 0;
 				86400 setfog (wcweather select 1);
 				86400 setOvercast (wcweather select 2);
 				skipTime 24;
@@ -99,7 +99,7 @@
 				setdate (wcweather select 4);
 			}else{
 				wcweather = _this select 1;
-				60 setRain (wcweather select 0);
+				60 setRain 0;
 				60 setfog (wcweather select 1);
 				60 setOvercast (wcweather select 2);
 				setwind (wcweather select 3);
@@ -115,7 +115,7 @@
 
 	// apply weather
 	skipTime -24;
-	86400 setRain (wcweather select 0);
+	86400 setRain 0;
 	86400 setfog (wcweather select 1);
 	86400 setOvercast (wcweather select 2);
 	skipTime 24;
@@ -158,7 +158,7 @@
 		_lastrain = _rain;
 
 		wcweather = [_rain, _fog, _overcast, _wind, date];
-		60 setRain (wcweather select 0);
+		60 setRain 0;
 		60 setfog (wcweather select 1);
 		60 setOvercast (wcweather select 2);
 		setwind (wcweather select 3);
