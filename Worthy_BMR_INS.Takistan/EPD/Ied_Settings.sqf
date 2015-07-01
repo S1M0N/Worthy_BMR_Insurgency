@@ -27,9 +27,9 @@ iedSecondaryItems = ["Land_CanisterOil_F","Land_FMradio_F","Land_Canteen_F","Lan
 
 iedSmallItems = ["RoadCone_F","Land_Pallets_F","Land_WheelCart_F","Land_Tyre_F","Land_ButaneCanister_F","Land_GasCanister_F","Land_Pillow_F"];
 
-iedMediumItems = ["Land_Portable_generator_F","Land_WoodenBox_F","Land_MetalBarrel_F","Land_BarrelTrash_grey_F","Land_Sacks_heap_F","Land_WoodenLog_F","Land_WoodPile_F"];
+iedMediumItems = ["Land_Portable_generator_F","Land_WoodenBox_F","Land_MetalBarrel_F","Land_BarrelTrash_grey_F","Land_Sacks_heap_F","Land_WoodenLog_F","Land_WoodPile_F","C_Kart_01_F","C_Quadbike_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F"];
 
-iedLargeItems = ["Land_Bricks_V2_F","Land_Bricks_V3_F","Land_Bricks_V4_F","Land_GarbageBags_F","Land_GarbagePallet_F","Land_GarbageWashingMachine_F","Land_JunkPile_F","Land_Tyres_F","Land_Wreck_Skodovka_F","Land_Wreck_Car_F","Land_Wreck_Car3_F","Land_Wreck_Car2_F","Land_Wreck_Offroad_F","Land_Wreck_Offroad2_F"];
+iedLargeItems = ["Land_Bricks_V2_F","Land_GarbageBags_F","Land_GarbagePallet_F","Land_JunkPile_F","Land_Tyres_F","RHS_UAZ_chdkz","rhs_uaz_open_chdkz","C_SUV_01_F","Land_Wreck_Offroad_F","Land_Wreck_Offroad2_F","C_Van_01_transport_F","B_G_Offroad_01_armed_F","C_Hatchback_01_F","C_Hatchback_01_sport_F"];
 
 //If you want to use locations without making markers on the map, define them here. Altis has been provided as an example. ***THESE ARE NOT WHERE THE ACTUAL IEDS ARE SPAWNED***
 //["Name",[LocationX,LocationY,LocationZ],size]

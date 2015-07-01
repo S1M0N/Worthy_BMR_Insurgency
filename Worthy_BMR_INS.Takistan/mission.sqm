@@ -188,7 +188,7 @@ class Mission
 	randomSeed=4828189;
 	class Intel
 	{
-		briefingName="Worthy_BMR_INS_v1.8.1.Takistan";
+		briefingName="Worthy_BMR_INS_v1.8.2.Takistan";
 		overviewText="Eliminate Armed Rebellion Against NATO forces. Gather Intel on Location of Enemy Ammo Cache and Destroy it.";
 		resistanceWest=0;
 		resistanceEast=1;
@@ -423,7 +423,7 @@ class Mission
 						{
 							value="5";
 							parentCls="ACE_ModuleNameTags";
-							typeName="PlayerNamesViewDistance";
+							typeName="playerNamesViewDistance";
 						};
 						class Item1
 						{
@@ -758,7 +758,7 @@ class Mission
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="alwaysSimulateForSnipers";
+							typeName="";
 						};
 						class Item2
 						{
@@ -770,7 +770,7 @@ class Mission
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="onlyActiveForLocalPlayers";
+							typeName="";
 						};
 						class Item4
 						{
@@ -11255,86 +11255,93 @@ class Mission
 		};
 		class Item412
 		{
-			position[]={9350.3096,360.89505,1749.8091};
+			position[]={9450.0957,407.89645,4750.0938};
 			name="mrkr326";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item413
 		{
-			position[]={9250.2861,347.81314,1750.1014};
+			position[]={9449.7871,403.11935,4650.0625};
 			name="mrkr327";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item414
 		{
-			position[]={9250.2549,342.62799,1850.1556};
+			position[]={9349.9277,402.8833,4650.0464};
 			name="mrkr328";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item415
 		{
-			position[]={9150.1074,331.97275,1850.083};
+			position[]={9349.7822,411.18384,4549.9063};
 			name="mrkr329";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item416
 		{
-			position[]={9250.21,330.56668,1949.9296};
+			position[]={9249.9502,421.11252,4650.0244};
 			name="mrkr330";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item417
 		{
-			position[]={9150.1074,326.0275,1949.9297};
+			position[]={9249.9346,407.16779,4549.9263};
 			name="mrkr331";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item418
 		{
-			position[]={9263.415,345.22812,1828.5122};
+			position[]={9371.377,402.96606,4663.2085};
 			name="civmkr35";
 			markerType="ELLIPSE";
 			type="Empty";
 			a=200;
 			b=140;
-			angle=53.445599;
+			angle=-36.542759;
 		};
 		class Item419
 		{
-			position[]={9210.9131,331.11386,1918.3409};
+			position[]={9281.5371,402.9155,4610.7271};
 			name="IED22";
 			markerType="ELLIPSE";
 			type="Empty";
 			a=300;
 			b=150;
-			angle=55.111198;
+			angle=-34.877171;
 		};
 		class Item420
 		{
-			position[]={9049.709,307.9567,2206.9116};
+			position[]={8449.5869,457.51486,3797.002};
 			name="mrkr332";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=50;
 			b=50;
+			angle=-89.988365;
 		};
 		class Item421
 		{

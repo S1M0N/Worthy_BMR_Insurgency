@@ -263,8 +263,8 @@ if (INS_op_faction isEqualTo 9) then
 };
 
 // Air classes used by AirPatrolEast.sqf
-INS_Op4_A3_fixedWing = ["I_Plane_Fighter_03_AA_F","I_Plane_Fighter_03_CAS_F","O_Plane_CAS_02_F"];
-INS_Op4_A3_helis = 	["RHS_Mi24V_vvsc"];
+INS_Op4_A3_fixedWing = ["RHS_Su25SM_KH29_vvsc"];
+INS_Op4_A3_helis = 	["RHS_Mi24V_vvsc","RHS_Mi8AMTSh_UPK23_vvsc"];
 INS_OP4_mod_fixedWing = ["JS_JC_SU35","IVORY_MIG29K_1","RHS_Su25SM_vvsc"];
 INS_OP4_mod_helis = ["RHS_Mi24P_vvsc","RHS_Mi24V_vvsc"];
 

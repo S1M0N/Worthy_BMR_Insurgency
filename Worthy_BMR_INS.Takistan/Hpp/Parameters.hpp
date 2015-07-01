@@ -132,21 +132,21 @@ class Params
 	title = "		Enable JIG Enemy Air Patrols?";
 	values[]={0,1,2,3};
 	texts[]={"No","Helis Only","Fixed Wing Only","Helis and Fixed Wing"};
-	default = 1;
+	default = 3;
 	};
 	class AiAirRespawn//17
 	{
 	title = "		Minimum Enemy Air Patrol Respawn Delay";
 	values[]={45,300,600,1200,1800,2400,3000,3600};
 	texts[]={"45 seconds","5 minutes","10 minutes","20 minutes","30 minutes","40 minutes","50 minutes","60 minutes"};
-	default = 600;
+	default = 45;
 	};
 	class patrolewpmod//18
 	{
 	title = "		Air Patrole waypoint type";
 	values[]={0,1};
 	texts[]={"Seek N Destroy","Hunt Players"};
-	default = 1;
+	default = 0;
 	};
 	class INS_Dum_Param5//19
 	{
