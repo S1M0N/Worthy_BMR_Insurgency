@@ -4,6 +4,12 @@
 call compile preprocessFileLineNumbers "INSfncs\server_fncs.sqf";
 
 // Weather //
+if (JIPweather isEqualTo 0) then {
+	private ["_startingdate"];
+	_startingdate = [2015, 07, 01, BTC_p_time, 00];
+	setdate _startingdate;
+	setTimeMultiplier 2.6;
+};
 if (JIPweather isEqualTo 1) then {[] execVM "scripts\real_weather.sqf"; skiptime ((BTC_p_time - (daytime) +24) % 24);};
 if (JIPweather isEqualTo 2) then {[] execVM "scripts\randomWeather2.sqf"; skipTime (BTC_p_time -0.84);};
 
