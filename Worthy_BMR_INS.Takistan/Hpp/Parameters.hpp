@@ -19,7 +19,7 @@ class Params
 	title = "		Weather";
 	values[]={0,1,2};
 	texts[]={"Weather Disabled","Real Weather Enabled","Random Weather Enabled"};
-	default = 1;
+	default = 0;
 	};
 	class radio_chatter//3
 	{
