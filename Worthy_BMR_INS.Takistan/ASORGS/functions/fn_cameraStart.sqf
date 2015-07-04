@@ -107,7 +107,7 @@ if(worldName in ASORGS_brightMaps) then {
 ASORGS_Light setLightBrightness _brightness;
 ASORGS_Light setLightAmbient[1,1,1];
 ASORGS_Light setLightColor[1,1,1];
-BIS_DEBUG_CAM = true;
+BIS_DEBUG_CAM = objNull;
 
 ASORGS_RotateDirection = 0;
 /*

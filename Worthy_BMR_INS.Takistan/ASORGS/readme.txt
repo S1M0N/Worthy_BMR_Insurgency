@@ -1,4 +1,4 @@
-ASOR Gear Selector v1.424
+ASOR Gear Selector v1.54
 
 Installation instructions:
 Include the following in your description.ext file:
@@ -32,6 +32,13 @@ Forums:
 http://forums.bistudio.com/showthread.php?183293-ASOR-Gear-Selector
 
 Change Log:
+
+v1.54 17/6/2015
+- 1.53 was broken.
+
+v1.53 17/6/2015
+- Fixes some issues with ACE and Arma 3 1.46 update.
+
 v1.52 9/4/2015
 - Fixes insignias.
 - Fixes various attachments not working (BIS doesn't use matching case, so the change below broke some attachments).
@@ -39,6 +46,12 @@ v1.52 9/4/2015
 - Adds class specific blacklist/whitelist.
 - Fixes some ammo issues from Marksmen DLC.
 - Fixes Bipods.
+
+v1.51 19/2/2015
+- Fixes insignias.
+- Fixes various attachments not working (BIS doesn't use matching case, so the change below broke some attachments).
+- Fixes whitelist (hopefully).
+- Adds class specific blacklist/whitelist.
 
 v1.5 25/1/2015
 - Uses new configProperties command for faster loading.

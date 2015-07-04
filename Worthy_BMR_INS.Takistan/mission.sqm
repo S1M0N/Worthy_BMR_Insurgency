@@ -188,7 +188,7 @@ class Mission
 	randomSeed=4828189;
 	class Intel
 	{
-		briefingName="Worthy_BMR_INS_v1.8.2.2.Takistan";
+		briefingName="Worthy_BMR_INS_v1.8.2.4.Takistan";
 		overviewText="Eliminate Armed Rebellion Against NATO forces. Gather Intel on Location of Enemy Ammo Cache and Destroy it.";
 		resistanceWest=0;
 		resistanceEast=1;
