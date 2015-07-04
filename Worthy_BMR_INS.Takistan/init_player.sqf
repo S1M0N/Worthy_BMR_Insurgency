@@ -68,35 +68,35 @@ if (DebugEnabled > 0) then {
 	//INS_Wep_box addAction[("<t color='#00ffe9'>") + ("Load VAS profile") + "</t>","=BTC=_revive\=BTC=_addAction.sqf",[[],BTC_main_load_VAS], 1, true, true, "", "true"];
 	//MHQ_1 addAction["<t color='#ff1111'>Virtual Ammobox</t>", "VAS\open.sqf"];
 	//MHQ_1 addAction[("<t color='#F56618'>") + ("Load VAS profile") + "</t>","=BTC=_revive\=BTC=_addAction.sqf",[[],BTC_MHQ1_load_VAS], 1, true, true, "", "true"];
-	//MHQ_1 addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
-	MHQ_1 addAction["<t color='#ff1111'>Gear Select</t>", "execvm 'ASORGS\open.sqf'"];
+	MHQ_1 addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
+	//MHQ_1 addAction["<t color='#ff1111'>Gear Select</t>", "execvm 'ASORGS\open.sqf'"];
 
 
 	//MHQ_2 addAction["<t color='#ff1111'>Virtual Ammobox</t>", "VAS\open.sqf"];
 	//MHQ_2 addAction[("<t color='#F56618'>") + ("Load VAS profile") + "</t>","=BTC=_revive\=BTC=_addAction.sqf",[[],BTC_MHQ2_load_VAS], 1, true, true, "", "true"];
-	//MHQ_2 addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
-	MHQ_2 addAction["<t color='#ff1111'>Gear Select</t>", "execvm 'ASORGS\open.sqf'"];
+	MHQ_2 addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
+	//MHQ_2 addAction["<t color='#ff1111'>Gear Select</t>", "execvm 'ASORGS\open.sqf'"];
 
 
 	//MHQ_3 addAction["<t color='#ff1111'>Virtual Ammobox</t>", "VAS\open.sqf"];
 	//MHQ_3 addAction[("<t color='#F56618'>") + ("Load VAS profile") + "</t>","=BTC=_revive\=BTC=_addAction.sqf",[[],BTC_MHQ3_load_VAS], 1, true, true, "", "true"];
-	//MHQ_3 addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
-	MHQ_3 addAction["<t color='#ff1111'>Gear Select</t>", "execvm 'ASORGS\open.sqf'"];
+	MHQ_3 addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
+	//MHQ_3 addAction["<t color='#ff1111'>Gear Select</t>", "execvm 'ASORGS\open.sqf'"];
 
 
 
 	// Virtual Arsenal
-	//INS_Wep_box addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
-	INS_Wep_box addAction["<t color='#ff1111'>Gear Select</t>", "ASORGS\open.sqf"];
+	INS_Wep_box addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
+	//INS_Wep_box addAction["<t color='#ff1111'>Gear Select</t>", "ASORGS\open.sqf"];
 
 
 	// Op4 MHQ
 	Opfor_MHQ addAction[("<t color=""#12F905"">") + ("Deploy MHQ") + "</t>","scripts\deployOpforMHQ.sqf",nil,1, false, true, "", "side _this != INS_Blu_side"];
 
 	// Op4 Weapon Box
-	INS_weps_Cbox addAction ["<t color='#ff1111'>Save loadout</t>", "scripts\get_loadout.sqf",nil,1, false, true, "", "side _this != INS_Blu_side"];
-	INS_weps_Cbox addAction ["<t color='#ff1111'>Load Saved Loadout</t>", "scripts\set_loadout.sqf",nil,1, false, true, "", "side _this != INS_Blu_side"];
-	INS_weps_Cbox addAction[("<t color='#12F905'>") + ("Restore Default Loadout") + "</t>",{call Op4_restore_loadout},nil,1, false, true, "", "side _this != INS_Blu_side"];
+	//INS_weps_Cbox addAction ["<t color='#ff1111'>Save loadout</t>", "scripts\get_loadout.sqf",nil,1, false, true, "", "side _this != INS_Blu_side"];
+	//INS_weps_Cbox addAction ["<t color='#ff1111'>Load Saved Loadout</t>", "scripts\set_loadout.sqf",nil,1, false, true, "", "side _this != INS_Blu_side"];
+	//INS_weps_Cbox addAction[("<t color='#12F905'>") + ("Restore Default Loadout") + "</t>",{call Op4_restore_loadout},nil,1, false, true, "", "side _this != INS_Blu_side"];
 
 	// AI recruitment
 	if (max_ai_recruits > 1) then {INS_Wep_box addAction["<t color='#1d78ed'>Recruit Infantry</t>", "bon_recruit_units\open_dialog.sqf", [], 0];};
