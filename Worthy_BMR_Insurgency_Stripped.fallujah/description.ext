@@ -1,5 +1,5 @@
 
-Author = "Simon - Based on Jigsor's Build";
+Author = "Simon & Razor - Based on Jigsor's Build";
 loadScreen = "images\SplashScreen4.paa";
 onLoadName = "Worthy BMR Insurgency Takistan v1.6";
 onLoadMission = ts3.worthyplatoon.com;

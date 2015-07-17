@@ -59,7 +59,7 @@ if (!isNil "MHQ_3") then {
 };
 
  // Set objects not liftable, not draggable, not loadable and not placeable with BTC Logistics
-INS_flag setFlagTexture "images\bmrflag.paa";// your squad flag here or comment out for default Blufor flag
+INS_flag setFlagTexture "images\Worthy_Platoon_Logo_256px.paa";// your squad flag here or comment out for default Blufor flag
 Delivery_Box hideObjectGlobal true;
 [] spawn opfor_NVG;
 
@@ -88,6 +88,8 @@ if (DebugEnabled isEqualTo 1) then
 [1800,10*60,10*60,10*60,10*60,10*60] execVM "scripts\repetitive_cleanup.sqf";
 
 execVM "scripts\remove_boobyTraps.sqf";
+
+//execVM "scripts\roofGuns\rg_init.sqf";
 
 // Friendly Fixed Wing Assets //
 if (Airfield_opt) then

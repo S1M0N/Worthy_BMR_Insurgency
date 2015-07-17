@@ -46,7 +46,7 @@ SR_fnc_vehMkrs = {
 			} else {
 				if (count _crew == 0) then {
 					_mkr setMarkerColorLocal "ColorYellow";
-					if (_dist < 250) then {
+					if (_dist < 500) then {
 						_mkr setMarkerTextLocal "";
 					} else {
 						_mkr setMarkerTextLocal _mkrText;

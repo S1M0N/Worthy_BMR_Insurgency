@@ -67,30 +67,7 @@ allowExplosiveToTriggerIEDs = true;
 //http://community.bistudio.com/wiki/side
 
 iedArray = [
-	["IEDa", 1,1, "WEST"],
-	["IED1", 1,1, "WEST"],
-	["IED2", 1,1, "WEST"],
-	["IED3", 1,1, "WEST"],
-	["IED4", 1,1, "WEST"],
-	["IED5", 2,2, "WEST"],
-	["IED6", 1,1, "WEST"],
-	["IED7", 1,1, "WEST"],
-	["IED8", 1,1, "WEST"],
-	["IED9", 1,1, "WEST"],
-	["IED10", 1,1, "WEST"],
-	["IED11", 1,1, "WEST"],
-	["IED12", 1,1, "WEST"],
-    ["IED13", 2,4, "WEST"],
-	["IED14", 1,2, "WEST"],
-	["IED15", 1,1, "WEST"],
-	["IED16", 2,1, "WEST"],
-	["IED17", 1,1, "WEST"],
-	["IED18", 1,1, "WEST"],
-	["IED19", 2,3, "WEST"],
-	["IED20", 1,1, "WEST"],
-	["IED21", 2,3, "WEST"],
-	["IED22", 2,3, "WEST"],
-	["IED23", 2,3, "WEST"]
+	["Marker_GameZone", 50,100, "WEST"]
 	];
 
 //Place the mapLocations, predefinedLocations, and markerNames of places you don't want any IEDs spawning

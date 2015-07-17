@@ -52,8 +52,8 @@ fnc_SR_SD_delMkr = {
 };
 
 fnc_supplyBoxInit = {
-	//_this addAction["<t color='#ff1111'>Gear Select</t>", "ASORGS\open.sqf"];
-	_this addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
+	_this addAction["<t color='#ff1111'>Gear Select</t>", "ASORGS\open.sqf"];
+	//_this addAction[("<t color='#ff1111'>") + ("Open Virtual Arsenal") + "</t>",{["Open",true] spawn BIS_fnc_arsenal;}];
 };
 
 fnc_SR_SD_trkMkr = {

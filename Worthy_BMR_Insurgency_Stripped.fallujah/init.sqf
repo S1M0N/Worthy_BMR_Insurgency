@@ -21,6 +21,7 @@ call compile preProcessFileLineNumbers "INSfncs\commom_fncs.sqf";
 call compile preprocessFileLineNumbers "supplydrop\svr_fncs.sqf";
 [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
 
+
 // EOS
 switch (INS_op_faction) do
 {
@@ -114,6 +115,7 @@ switch (INS_op_faction) do
 	};
 };
 if (CiviFoot isEqualTo 1) then {[]execVM "eos_civ\OpenMeCiv.sqf";};// Civilians
+
 
 // Common Scripts
 execVM "Objectives\shk_taskmaster.sqf";
