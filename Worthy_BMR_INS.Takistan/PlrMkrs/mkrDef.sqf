@@ -14,7 +14,7 @@ mkrSpawnPos = [0,0,0];
 #define pltGrp ["PL","PLS","PLJTAC"]
 #define sqdOne ["SL1","worthy112","worthy113","worthy114","worthy115","worthy116","worthy117","worthy118"]
 #define sqdTwo ["SL2","worthy122","worthy123","worthy124","worthy125","worthy126","worthy127","worthy128"]
-#define sqdThree ["SL3","worthy132","worthy133","worthy134","worthy135","worthy136","worthy137","worthy138"]
+#define sqdThree ["RSL","worthy132","worthy133","worthy134","worthy135","worthy136","worthy137","worthy138"]
 
 #define westCars ["atv1","atv2","atv3","atv4","atv5","atv6","atv7","hmv1","hmv2","hmv3","hmv4","hmv5","hmv6","hmv7","hmv8","tech1","tech2","tech3","tech4","tech5"]
 #define westTrk ["MHQ_1","MHQ_2","medTRK","rep1","rep2","fuel1","ammo1"]

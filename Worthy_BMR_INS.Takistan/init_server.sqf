@@ -69,7 +69,7 @@ if (!isNil "MHQ_3") then {
 	_x setvariable ["BTC_cannot_load",1,true];
 	_x setvariable ["BTC_cannot_place",1,true];
 } foreach INS_log_blacklist; // Set objects not liftable, not draggable, not loadable and not placeable with BTC Logistics
-INS_flag setFlagTexture "images\bmrflag.paa";// your squad flag here or comment out for default Blufor flag
+INS_flag setFlagTexture "images\Worthy_Platoon_Logo_256px.paa";// your squad flag here or comment out for default Blufor flag
 Delivery_Box hideObjectGlobal true;
 [] spawn opfor_NVG;
 
