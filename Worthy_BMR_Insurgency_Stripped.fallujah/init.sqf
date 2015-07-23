@@ -27,83 +27,16 @@ switch (INS_op_faction) do
 {
 	case 1 : // CSAT (no mods)
 	{
-		[EAST,0,0]execVM "eos\OpenMe.sqf";
 	};
 	case 2 : // AAF (no mods)
 	{
-		[RESISTANCE,2,2]execVM "eos\OpenMe.sqf";
-	};
-	case 3 : // African Conflict with NATO SF and Russian Spetsnaz Weapons (@african_conflict;@nato_russian_sf_weapons)
-	{
-		if ((isClass(configFile >> "cfgPatches" >> "mas_afr_rebl_o")) &&
-		{isClass(configFile >> "cfgPatches" >> "mas_weapons")}) then
-		{
-			activateAddons ["mas_afr_rebl_o","mas_weapons"];
-			[EAST,3,4]execVM "eos\OpenMe.sqf";
-		};
-	};
-	case 4 : // CAF Aggressors (@CAF_AG1.5).
-	{
-		if (isClass(configFile >> "cfgPatches" >> "caf_ag_faction_me_t")) then
-		{
-			activateAddons ["caf_ag_faction_me_t","caf_ag_faction_afr_p","caf_ag_faction_eeur_r","caf_ag_faction_me_civ","caf_ag_faction_afr_civ"];
-			[EAST,11,13]execVM "eos\OpenMe.sqf";
-		};
-	};
-	case 5 : // Syrian Army and QUD forces with CUP Weapons (@mec;@cup;@asdg_jr;@rds;@rds_tank;@cha_mi24)
-	{
-		if ((isClass(configFile >> "cfgPatches" >> "mec_core")) &&
-		{(isClass(configFile >> "cfgPatches" >> "cup_weapons_weaponscore")) &&
-		(isClass(configFile >> "cfgPatches" >> "asdg_jointrails")) &&
-		(isClass(configFile >> "cfgPatches" >> "rds_staticweapons_core")) &&
-		(isClass(configFile >> "cfgPatches" >> "rds_tanks")) &&
-		(isClass(configFile >> "cfgPatches" >> "cha_mi24"))}) then
-		{
-			activateAddons ["mec_saa","mec_saa_tanks","mec_saa_staticweapons","mec_qudsforce","mec_irregulars","mec_irr_tanks","mec_irr_staticweapons_o","mec_irr_staticweapons","mec_civilians","cup_creatures_peaople_military_dummyset","mec_gme_tanks"];
-			[EAST,5,6]execVM "eos\OpenMe.sqf";
-		};
-	};
-	case 6 : // Syrian Army and Middle Eastern Irregulars (Al Qaida) with CUP Weapons (@mec;@cup;@asdg_jr;@rds;@rds_tank;@cha_mi24)
-	{
-		if ((isClass(configFile >> "cfgPatches" >> "mec_core")) &&
-		{(isClass(configFile >> "cfgPatches" >> "cup_weapons_weaponscore")) &&
-		(isClass(configFile >> "cfgPatches" >> "asdg_jointrails")) &&
-		(isClass(configFile >> "cfgPatches" >> "rds_staticweapons_core")) &&
-		(isClass(configFile >> "cfgPatches" >> "rds_tanks")) &&
-		(isClass(configFile >> "cfgPatches" >> "cha_mi24"))}) then
-		{
-			activateAddons ["mec_saa","mec_saa_tanks","mec_saa_staticweapons","mec_qudsforce","mec_irregulars","mec_irr_tanks","mec_irr_staticweapons_o","mec_irr_staticweapons","mec_civilians","cup_creatures_peaople_military_dummyset","mec_gme_tanks"];
-			[EAST,5,7]execVM "eos\OpenMe.sqf";
-		};
-	};
-	case 7 : // Taliban and Islamic State with CUP Weapons (@mec;@cup;@asdg_jr;@rds;@rds_tank;@cha_mi24)
-	{
-		if ((isClass(configFile >> "cfgPatches" >> "mec_core")) &&
-		{(isClass(configFile >> "cfgPatches" >> "cup_weapons_weaponscore")) &&
-		(isClass(configFile >> "cfgPatches" >> "asdg_jointrails")) &&
-		(isClass(configFile >> "cfgPatches" >> "rds_staticweapons_core")) &&
-		(isClass(configFile >> "cfgPatches" >> "rds_tanks")) &&
-		(isClass(configFile >> "cfgPatches" >> "cha_mi24"))}) then
-		{
-			activateAddons ["mec_saa","mec_saa_tanks","mec_saa_staticweapons","mec_taliban","mec_tal_tanks","mec_taliban_staticweapons","mec_is","mec_is_tanks","mec_is_staticweapons","mec_qudsforce","mec_irregulars","mec_civilians","cup_creatures_peaople_military_dummyset","asdg_jointrails"];
-			[RESISTANCE,8,9]execVM "eos\OpenMe.sqf";
-		};
-	};
-	case 8 : // Sud Russians East Vs. West (@evw;@rds).
-	{
-		if ((isClass(configFile >> "cfgPatches" >> "sud_gw_v")) &&
-		{(isClass(configFile >> "cfgPatches" >> "rds_staticweapons_core"))}) then
-		{
-			activateAddons ["sud_gw_v","sud_gw_u","sud_a10","sud_mi24","rds_staticweapons_core"];
-			[EAST,10,10]execVM "eos\OpenMe.sqf";
-		};
 	};
 	case 9 : // RHS - Armed Forces of the Russian Federation (@rhs_afrf3)
 	{
 		if (isClass(configFile >> "cfgPatches" >> "rhs_c_troops")) then
 		{
 			activateAddons ["rhs_c_troops","rhs_c_btr","rhs_c_bmp","rhs_c_tanks","rhs_c_a2port_armor","RHS_A2_CarsImport","RHS_A2_AirImport"];
-			[EAST,14,14]execVM "eos\OpenMe.sqf";
+			//[EAST,14,14]execVM "eos\OpenMe.sqf";
 
 			// (optional/not required) United States Armed Forces (@rhs_usf3)
 			// Due to RHS's vehicle sorting systems, they don't show up in vehicle rewards.
@@ -114,7 +47,7 @@ switch (INS_op_faction) do
 		};
 	};
 };
-if (CiviFoot isEqualTo 1) then {[]execVM "eos_civ\OpenMeCiv.sqf";};// Civilians
+//if (CiviFoot isEqualTo 1) then {[]execVM "eos_civ\OpenMeCiv.sqf";};// Civilians
 
 
 // Common Scripts
@@ -130,20 +63,6 @@ sr_SDRunning = false;
 publicVariable "sr_SDRunning";
 sr_sdActionAdded = false;
 publicVariable "sr_sdActionAdded";
-
-if ((DebugEnabled isEqualTo 1) && (tky_perfmon > 0)) then {
-	if (AI_SpawnDis > 1000) then {
-		[AI_SpawnDis,9,true,1800]execvm "zbe_cache\main.sqf";
-	}else{
-		[1000,9,true,1500]execvm "zbe_cache\main.sqf";
-	};
-}else{
-	if (AI_SpawnDis < 1000) then {
-		[1000,10,false,1500]execvm "zbe_cache\main.sqf";
-	}else{
-		[AI_SpawnDis,10,false,1500]execvm "zbe_cache\main.sqf";
-	};
-};
 
 // Init Join in Progress
 if (isJIP) then {[] spawn {[] execVM "scripts\JIPactions.sqf";};};

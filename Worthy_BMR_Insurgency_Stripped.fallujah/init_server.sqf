@@ -2,6 +2,8 @@
 
 // Server Functions //
 call compile preprocessFileLineNumbers "INSfncs\server_fncs.sqf";
+execVM "Scripts\MarkerGenerator\MarkerGenerator.sqf";
+//waitUntil {missionNameSpace getVariable "MarkerGenComplete";};
 
 // Weather //
 if (JIPweather isEqualTo 0) then {
