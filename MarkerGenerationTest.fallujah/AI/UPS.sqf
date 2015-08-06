@@ -21,7 +21,7 @@
 //    track         = Display a position and destination marker for each unit.
 //
 // =========================================================================================================
-hint "UPS STARTED";
+//hint "UPS STARTED";
 // how far opfors should move away if they're under attack
 // set this to 200-300, when using the script in open areas (rural surroundings)
 #define SAFEDIST 75
