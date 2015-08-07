@@ -2,7 +2,7 @@
 #include "defines.sqf"
 
 
-private ["_inc","_hPos","_eCount","_wUnits","_wCount","_house","_clear","_gMkr","_houses","_hCount"];
+private ["_inc","_hPos","_eCount","_wUnits","_wCount","_house","_clear","_gMkr","_houses","_hCount","_pos"];
 
 //if (findSquadAIName(player) == "") exitWith {};
 if (!alive player) exitWith {};
@@ -14,9 +14,12 @@ if (_hCount == 0) exitWith {};
 _inc = 6;
 if (_hCount < 10) then { _inc = 3; };
 {
+	//_gMkr = str(missionNamespace getVariable "MarkerArray");
 	//_gMkr = str([getpos _x] call WP_fnc_GetGridPos);
-	_gMkr = str(missionNamespace getVariable "MarkerArray");
-	if (markerColor _gMkr == "ColorRed") then {  // make sure it's a red square
+ 	_pos = [position _x] call WP_fnc_GetGridPos;
+	_gMkr = str _pos;
+	if (markerColor _gMkr == "ColorRed") then   // make sure it's a red square
+	{
 		_hPos   = getPosATL _x;
 		_eCount = count nearestObjects[_hPos, ["Man"], 15];
 		_wUnits = nearestPlayers(_hPos,SPAWNRANGE-200,true,"array");

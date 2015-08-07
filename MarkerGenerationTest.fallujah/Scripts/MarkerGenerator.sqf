@@ -4,9 +4,9 @@
 //Set Global Vars
 MarkerGenComplete = false;
 
-private ["_buildingsArray","_pos","_mkrName","_markerArray"];
+private ["_buildingsArray","_pos","_mkrName"];
 _buildingsArray = [];
-_markerArray = [];
+markerArray = [];
 
 private ["_gzPos","_gzRad"];
 _gzPos = getMarkerPos "Marker_GameZone";
@@ -23,8 +23,8 @@ _buildingsArray = [_gzPos,_gzRad,3] call WP_fnc_FindHouses;
 		_mkr setMarkerSizeLocal [50,50];
 		_mkr setMarkerAlphaLocal 0.3;
 		_mkr setMarkerColor "ColorRed";
-		_markerArray set [count _markerArray, _x];
+		markerArray set [count markerArray, _x];
 	};
 } forEach _buildingsArray;
-missionNamespace setVariable ["MarkerArray", _markerArray];
+publicVariable "markerArray";
 MarkerGenComplete = true;

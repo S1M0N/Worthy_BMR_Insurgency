@@ -3,10 +3,6 @@
 
 //[] spawn SR_fnc_spawnAIVehicle;
 
-
-
-
-
 getGroup = {
     private ["_side","_prefix","_name","_suffix"];
     _prefix = _this select 0;
@@ -20,7 +16,6 @@ getGroup = {
 		%1%2%3
 	", _prefix, _name, _suffix, _side];
 };
-
 
 DEBUG = true;
 private ["_num","_track","_speed","_grp","_type","_obj","_mkr","_pos","_vcl","_ai","_unum"];

@@ -18,7 +18,6 @@ if (local player) then {
 	[] execVM "initclient.sqf";
 };
 
-
 if (isServer) then {
 	[] execVM "AI\spawnAI.sqf";
 	//call setupCaches;
