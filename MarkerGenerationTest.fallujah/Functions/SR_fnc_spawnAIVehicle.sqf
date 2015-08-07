@@ -1,9 +1,5 @@
 
-#define eastVehiclesFreq	["rhs_sprut_vdv","rhs_bmp1p_msv","rhs_brm1k_msv","rhs_bmp2_msv","rhs_bmp2e_msv","rhs_bmp2d_msv","rhs_bmp2k_msv","rhs_prp3_msv","rhs_bmd4_vdv","rhs_bmd4ma_vdv","rhs_t80u","rhs_t80bv","rhs_t80a","rhs_t72bc_tv","rhs_t72bb_tv","rhs_zsu234_aa"]
-#define eastLightVehicles	["O_MRAP_02_gmg_F","O_MRAP_02_hmg_F"]
-#define vclCrewClass		["rhs_msv_crew"]
-#define eastRanks			["CAPTAIN","LIEUTENANT","SERGEANT","CORPORAL","PRIVATE"]
-
+#include "defines.sqf"
 
 DEBUG = true;
 private ["_num","_track","_speed","_grp","_type","_obj","_mkr","_pos","_vcl","_ai","_unum"];

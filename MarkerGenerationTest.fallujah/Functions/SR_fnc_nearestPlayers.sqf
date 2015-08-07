@@ -1,6 +1,5 @@
 
-#define westPlrStr ["tester"]
-
+#include "defines.sqf"
 
 private ["_result","_pos","_range","_type","_alive","_arr"];
 _pos   = _this select 0;

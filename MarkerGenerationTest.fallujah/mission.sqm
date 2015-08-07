@@ -51,7 +51,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7921.7368,7,2112.228};
+					position[]={5555.7427,6.9900022,2516.5337};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -59,6 +59,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="tester";
+					init="this allowDamage false;";
 				};
 			};
 		};

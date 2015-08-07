@@ -1,7 +1,7 @@
 
 
 
-#define canSee(X,Y,Z) ([X,Y,Z] call SR_fnc_canSee)
+#include "defines.sqf"
 
 
 private ["_arc","_pos","_arr","_rng","_unit","_canSee"];

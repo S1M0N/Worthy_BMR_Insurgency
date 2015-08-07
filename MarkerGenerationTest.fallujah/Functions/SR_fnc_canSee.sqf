@@ -1,6 +1,5 @@
 
-#define getDirTo(X,Y)       (((if(typeName Y == "OBJECT")then{getPosATL Y}else{Y} select 0) - (getPosATL X select 0)) atan2 ((if(typeName Y == "OBJECT")then{getPosATL Y}else{Y} select 1) - (getPosATL X select 1)))
-
+#include "defines.sqf"
 
 private ["_unit","_obj","_dirTo","_uDir","_vcl","_arc"];
 _unit  = _this select 0;

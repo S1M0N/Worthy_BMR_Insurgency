@@ -1,8 +1,7 @@
 
 
 
-#define arrCanSee(W,X,Y,Z) ([W,X,Y,Z] call SR_fnc_arrCanSee)
-#define nearestPlayers(W,X,Y,Z)	([W,X,Y,Z] call SR_fnc_nearestPlayers)
+#include "defines.sqf"
 
 
 // aiDespawn, removes dead AI
@@ -31,7 +30,6 @@ for "_i" from 1 to 4 do {
 				deleteVehicle _unit;
 				missionNamespace setVariable [_str, nil];
 			};
-			sleep 0.01;
 		};
 	};
 };

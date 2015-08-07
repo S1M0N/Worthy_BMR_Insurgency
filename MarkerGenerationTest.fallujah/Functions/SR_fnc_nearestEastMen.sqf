@@ -1,6 +1,5 @@
 
-#define eastInfClasses		["O_medic_F","O_officer_F","O_Soldier_AA_F","O_Soldier_AR_F","O_Soldier_AT_F","O_soldier_exp_F","O_Soldier_F","O_Soldier_GL_F","O_Soldier_LAT_F","O_soldier_M_F","O_soldier_repair_F","O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_A_F"]
-
+#include "defines.sqf"
 
 private ["_result","_arr1","_arr2","_alive","_type"];
 _arr1  = nearestObjects[_this select 0, ["LandVehicle"], _this select 1];

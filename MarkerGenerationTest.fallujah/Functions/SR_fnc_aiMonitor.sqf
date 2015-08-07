@@ -1,5 +1,5 @@
 
-#define eastStationaryGuns	["RDS_ZU23_CSAT","O_HMG_01_high_F","O_static_AT_F","O_GMG_01_high_F"]
+#include "defines.sqf"
 
 
 private ["_ai","_gun","_ais","_guns"];
@@ -26,11 +26,9 @@ if (isNull _gun && isNull _ai) exitWith {};
 		_dir = ((getPosATL _plr select 0) - (getPosATL _gun select 0)) atan2 ((getPosATL _plr select 1) - (getPosATL _gun select 1));
 		group _gun setFormDir _dir;
 		_gun doTarget _plr;
-		sleep 1;
 		curTime = time;
 		while { time - curTime < 5 } do {
 			vehicle _gun fireAtTarget [_plr,currentWeapon vehicle _gun];
-			sleep (0.1 + random 0.2);
 		};
 	};
 }] call RE;

@@ -1,9 +1,6 @@
 
 
-#define maxAIPerPlayer 4
-#define SPAWNRANGE 			500
-#define eastPlayerStrings   ["east1","east2","east3","east4"]
-#define arrCanSee(W,X,Y,Z) ([W,X,Y,Z] call SR_fnc_arrCanSee)
+#include "defines.sqf"
 
 // makes up the AI name based on player squad name plus a incrementing number and returns it
 // each player has its "own" AI spawned, defined by the count defined in the mission params
