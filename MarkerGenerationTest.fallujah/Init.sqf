@@ -1,6 +1,4 @@
 
-
-
 //Mark New Launch In report file
 diag_log "============================================================ Mission Restarted ============================================================";
 
@@ -12,7 +10,6 @@ execVM "Functions\FunctionPreProcessor.sqf";
 waitUntil {missionNamespace getVariable "funcsProcessed";};
 
 execVM "Scripts\MarkerGenerator.sqf";
-
 
 if (local player) then {
 	[] execVM "initclient.sqf";

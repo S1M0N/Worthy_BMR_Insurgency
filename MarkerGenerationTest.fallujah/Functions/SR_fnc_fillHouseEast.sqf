@@ -9,6 +9,7 @@ DEBUG = true;
 _house	 = _this select 0;
 _wCount  = _this select 1;
 _inc	 = _this select 2;
+_gMkr	 = _this select 3;
 
 _bool = false;
 _npos = [_house, 0] call SR_fnc_countPositions;								// Number of spawn positions in a house
@@ -35,36 +36,22 @@ for [{ _i=_ranSpawnPos},{ _i<((_nPos-1)+_ranSpawnPos)},{ _i=_i+_inc}] do
 	// create an AI at _pos if no other "Man" in radus of 3 meters of _pos
 	if (count nearestObjects[_pos, ["Man"], 3] == 0) then
 	{
+		/*
 		_AiName = [player, 1] call SR_fnc_findSquadAIName;
 		if (_AiName == "") exitWith
 		{
 			breakTo "fillHouseEastMain";
 		};
-		_bool  = !isNil "_AiName";
-		if _bool then
-		{
-			_bool = alive (call compile _AiName);
-		};
-		// When the AI unit (found by name) is alive, make sure it's healthy and, make it "look-alive" by issuing a move command
-		if _bool exitWith
-		{
-			_unit = (call compile _AiName);
-			_unit setPosATL _pos;
-			_unit setDamage 0;
-			doStop _unit;
 
-			if DEBUG then
-			{
-				server globalChat format["moving %1", _AiName];
-			};
-		};
+
 		// If there are no appropriate AI units around,  prepare for spawning them
 		if DEBUG then
 		{
 			server globalChat format["spawning %1", _AiName];
 		};
+		*/
 		_class = (eastInfClasses select (random _cCount));
-		_grp  = [player, "EastAIGrp", "", "east"] call SR_fnc_getGroup; // create an AI group
+		_grp  = [player, "EastAIGrp", _gMkr, "east"] call SR_fnc_getGroup; // create an AI group
 		_ai = _grp createUnit [_class, spawnPos, [], 0, "NONE"];
 		_ai setPosATL _pos;
 
@@ -74,8 +61,9 @@ for [{ _i=_ranSpawnPos},{ _i<((_nPos-1)+_ranSpawnPos)},{ _i=_i+_inc}] do
 	    	[
 	        	'killed',
 	         	{
-	                _IntelDrop = createVehicle [
-	                	(["Land_Suitcase_F","Land_Laptop_F"] call bis_fnc_selectRandom), 	// Intel Types
+	         		_intelType = ["Land_Suitcase_F","Land_Laptop_F"] call bis_fnc_selectRandom;
+	                _intelDrop = createVehicle [
+	                	_intelType, 														// Intel Type
 	                	(getpos _ai), 														// Spawn Position
 	                	[], 																// Marker Array
 	                	1, 																	// Placement Radius

@@ -42,7 +42,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			side="WEST";
@@ -51,7 +51,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6950.3257,7,2387.759};
+					position[]={7071.8818,7,2685.0828};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -244,6 +244,26 @@ class Mission
 				};
 			};
 		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7144.5029,7,2686.7339};
+					id=12;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="theOtherTester";
+					init="this allowDamage false;";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -251,7 +271,7 @@ class Mission
 		class Item0
 		{
 			position[]={7917.4634,7,2107.9316};
-			id=12;
+			id=13;
 			side="EMPTY";
 			vehicle="RHS_UH60M_d";
 			skill=0.60000002;
@@ -259,7 +279,7 @@ class Mission
 		class Item1
 		{
 			position[]={7918.1655,7,2088.1133};
-			id=13;
+			id=14;
 			side="EMPTY";
 			vehicle="MASH_EP1";
 			skill=0.60000002;

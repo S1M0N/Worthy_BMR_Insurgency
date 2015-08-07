@@ -41,7 +41,7 @@ Master Defines file - Check each commented block for function that the Defines a
 #define eastPlayerStrings   ["east1","east2","east3","east4"]
 
 //SR_fnc_nearestPlayers
-#define westPlrStr ["tester"]
+#define westPlrStr ["tester", "theOtherTester"]
 
 //SR_fnc_spawnAIVehicle & AI\spawnAI.sqf
 #define eastVehiclesFreq	["rhs_sprut_vdv","rhs_bmp1p_msv","rhs_brm1k_msv","rhs_bmp2_msv","rhs_bmp2e_msv","rhs_bmp2d_msv","rhs_bmp2k_msv","rhs_prp3_msv","rhs_bmd4_vdv","rhs_bmd4ma_vdv","rhs_t80u","rhs_t80bv","rhs_t80a","rhs_t72bc_tv","rhs_t72bb_tv","rhs_zsu234_aa"]

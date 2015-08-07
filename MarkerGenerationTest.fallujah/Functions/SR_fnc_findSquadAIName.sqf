@@ -8,32 +8,18 @@
 
 
 private ["_i","_squad","_str","_unit","_plrs","_pos","_arr"];
-_squad = _this select 0;
+    _squad = _this select 0;
+    _i     = _this select 1;
 
-_i = _this select 1;
-
-if (_i > maxAIPerPlayer) exitWith {};
-
-_str = format["%1ai%2", _squad, _i];
-
-if isNil _str exitWith { _str };
-
-_unit = call compile _str;
-
-if isNull _unit exitWith { _str };
-
-_pos = getPosATL _unit;
-
-_plrs = [_pos,SPAWNRANGE,true,"array"] call SR_fnc_nearestPlayers;
-
-if (alive _unit) exitWith { _str };
-
-if !(str leader _unit in eastPlayerStrings) exitWith { _str };
-
-if ((count _plrs == 0) || !(arrCanSee(_plrs,_unit,90,100))) exitWith { _str };
-
-if !(player in _plrs) exitWith { _str };
-
-if !(arrCanSee(_plrs,_unit,35,50)) exitWith { _str };
-
-[_squad, _i+1] call SR_fnc_findSquadAIName;
+    if (_i > maxAIPerPlayer) exitWith { "" };
+    _str = format["%1ai%2", _squad, _i];
+    if isNil _str exitWith { _str };
+    _unit = call compile _str;
+    if isNull _unit exitWith { _str };
+    _pos = getPosATL _unit;
+    _plrs = nearestPlayers(_pos,SPAWNRANGE,true,"array");
+    if (
+    alive _unit && !(str leader _unit in eastPlayerStrings) &&
+    ( (count _plrs == 0 || !arrCanSee(_plrs,_unit,90,100)) || (!(player in _plrs) && !arrCanSee(_plrs,_unit,35,50)) )
+    ) exitWith { _str };
+    [_squad, _i+1] call SR_fnc_findSquadAIName;

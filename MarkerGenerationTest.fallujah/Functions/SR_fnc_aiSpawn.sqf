@@ -1,7 +1,6 @@
 
 #include "defines.sqf"
 
-
 private ["_inc","_hPos","_eCount","_wUnits","_wCount","_house","_clear","_gMkr","_houses","_hCount","_pos"];
 
 //if (findSquadAIName(player) == "") exitWith {};
@@ -27,7 +26,7 @@ if (_hCount < 10) then { _inc = 3; };
 		// players need not to be within SPAWNRANGE-200 from a house or they need not to see the spawn position for its AI to spawn
 		//if (_eCount == 0 && (_wCount == 0 || !arrCanSee(_wUnits,_hPos,30,50))) then { [_x, _wCount, _inc] call SR_fnc_fillHouseEast; };
 		if (_eCount == 0) then {
-			[_x, _wCount, _inc] call SR_fnc_fillHouseEast;
+			[_x, _wCount, _inc, _pos] call SR_fnc_fillHouseEast;
 		};
 	};
 	//if (findSquadAIName(player) == "") exitWith {};
