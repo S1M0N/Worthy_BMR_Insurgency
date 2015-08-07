@@ -4,6 +4,8 @@
 //Mark New Launch In report file
 diag_log "============================================================ Mission Restarted ============================================================";
 
+enableSaving [false,false];
+
 //Enable Function Libary
 execVM "Functions\FunctionPreProcessor.sqf";
 
