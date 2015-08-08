@@ -17,7 +17,7 @@ getGroup = {
 	", _prefix, _name, _suffix, _side];
 };
 
-DEBUG = true;
+
 private ["_num","_track","_speed","_grp","_type","_obj","_mkr","_pos","_vcl","_ai","_unum"];
 _unum = 0;
 

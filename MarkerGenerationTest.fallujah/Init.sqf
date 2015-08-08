@@ -3,6 +3,7 @@
 diag_log "============================================================ Mission Restarted ============================================================";
 
 enableSaving [false,false];
+DEBUG = true;
 
 //Enable Function Libary
 execVM "Functions\FunctionPreProcessor.sqf";

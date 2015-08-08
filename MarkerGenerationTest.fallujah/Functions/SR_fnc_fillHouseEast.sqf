@@ -4,8 +4,6 @@
 private ["_ranSpawnPos","_process","_arr","_inc","_pID","_pos","_bool","_unit","_Ainame","_class","_ai","_nPos","_house","_cCount","_hID","_wCount","_i","_grp"];
 scopeName "fillHouseEastMain";
 
-DEBUG = true;
-
 _house	 = _this select 0;
 _wCount  = _this select 1;
 _inc	 = _this select 2;
@@ -57,20 +55,27 @@ for [{ _i=_ranSpawnPos},{ _i<((_nPos-1)+_ranSpawnPos)},{ _i=_i+_inc}] do
 
 		if (floor random 10 < 1) then			// %10 Chance of Intel Spawn
     	{
-			_ai addEventHandler
+			_evtID = _ai addEventHandler
 	    	[
 	        	'killed',
 	         	{
-	         		_intelType = ["Land_Suitcase_F","Land_Laptop_F"] call bis_fnc_selectRandom;
-	                _intelDrop = createVehicle [
-	                	_intelType, 														// Intel Type
-	                	(getpos _ai), 														// Spawn Position
-	                	[], 																// Marker Array
-	                	1, 																	// Placement Radius
-	                	'NONE'																// Special Spawn Type 'NONE', 'FLY', 'CAN_COLLIDE', 'FORM'
-                	];
-	         	}
+	         		_intelType = ["Land_Suitcase_F","Land_Laptop_unfolded_F","Land_SatellitePhone_F"] call bis_fnc_selectRandom;
+	         		_aiPos = position (_this select 0);
+	                _intelDrop = createVehicle [_intelType, _aiPos, [], 0, 'CAN_COLLIDE'];
+	                if (DEBUG) then {systemChat format["Intel Dropped - Type %1", _intelType];};
+	                 _var = (_this select 0) getVariable ["IntelKilledEventID", -1];
+                    if (_var != -1) then {
+                        _this select 0 removeEventHandler ['Killed', _var];
+                    };
+                }
 	     	];
+	     	_ai setVariable ["IntelKilledEventID",_evtID];
 	     };
 	};
 };
+
+// Intel Type
+// Spawn Position
+// Marker Array
+// Placement Radius
+// Special Spawn Type 'NONE', 'FLY', 'CAN_COLLIDE', 'FORM' listObjects allMissionObjects "Small_items"
