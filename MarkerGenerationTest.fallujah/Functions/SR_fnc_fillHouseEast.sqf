@@ -15,6 +15,7 @@ _cCount			= count eastInfClasses - 1; 					// 0 based count of OPFOR infantry cl
 _ranSpawnPos	= round random (_nPos-1); 						// Random spawn position
 _hID			= CACHEHOUSEPOSITIONS find (typeOf _house); 	// Test if the house is a valid house for AI spawns (if not it's -1)
 _arr			= [];
+_grp = grpNull;
 if (_hID != -1 && _wCount > 0) then
 {
 	_arr = CACHEHOUSEPOSITIONS select (_hID + 1);
@@ -73,6 +74,7 @@ for [{ _i=_ranSpawnPos},{ _i<((_nPos-1)+_ranSpawnPos)},{ _i=_i+_inc}] do
 	     };
 	};
 };
+_grp
 
 // Intel Type
 // Spawn Position

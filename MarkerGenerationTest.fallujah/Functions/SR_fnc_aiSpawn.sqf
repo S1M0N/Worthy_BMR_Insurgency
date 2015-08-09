@@ -21,12 +21,22 @@ if (_hCount < 10) then { _inc = 3; };
 	{
 		_hPos   = getPosATL _x;
 		_eCount = count nearestObjects[_hPos, ["Man"], 15];
-		_wUnits = nearestPlayers(_hPos,SPAWNRANGE-200,true,"array");
+		_wUnits =  [_hPos,SPAWNRANGE-200,true,"array"] call SR_fnc_nearestPlayers;
+		//_wUnits = nearestPlayers(_hPos,SPAWNRANGE-200,true,"array");
 		_wCount = count _wUnits;
 		// players need not to be within SPAWNRANGE-200 from a house or they need not to see the spawn position for its AI to spawn
 		//if (_eCount == 0 && (_wCount == 0 || !arrCanSee(_wUnits,_hPos,30,50))) then { [_x, _wCount, _inc] call SR_fnc_fillHouseEast; };
-		if (_eCount == 0) then {
-			[_x, _wCount, _inc, _pos] call SR_fnc_fillHouseEast;
+		if (_eCount == 0 && !(_gMkr in ActiveZones)) then
+		{
+			_grp = [_x, _wCount, _inc, _pos] call SR_fnc_fillHouseEast;
+			if (DEBUG) then { systemChat format ["Zone Activated: %1", _pos];};
+				if (!isNull _grp) then
+				{
+					ActiveGroups pushBack [_pos,_grp];
+					publicVariable "ActiveGroups";
+				};
+			ActiveZones pushBack _pos;
+			publicVariable "ActiveZones";
 		};
 	};
 	//if (findSquadAIName(player) == "") exitWith {};

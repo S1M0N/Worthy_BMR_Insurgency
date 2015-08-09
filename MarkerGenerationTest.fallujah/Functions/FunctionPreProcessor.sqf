@@ -8,6 +8,7 @@ missionNamespace setVariable ["funcsProcessed", false];
 
 WP_fnc_FindHouses = compile preprocessFile "Functions\MarkerGenerator\WP_fnc_FindHouses.sqf";
 WP_fnc_GetGridPos = compile preprocessFile "Functions\MarkerGenerator\WP_fnc_GetGridPos.sqf";
+WP_fnc_AIDespawner = compile preprocessFile "Functions\WP_fnc_AIDespawner.sqf";
 SR_fnc_nearestPlayers = compile preprocessFile "Functions\SR_fnc_nearestPlayers.sqf";
 SR_fnc_nearestEastMen = compile preprocessFile "Functions\SR_fnc_nearestEastMen.sqf";
 SR_fnc_countPositions = compile preprocessFile "Functions\SR_fnc_countPositions.sqf";

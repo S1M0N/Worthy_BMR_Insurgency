@@ -1,5 +1,5 @@
 
-private ["_house","_houses","_gMkr"];
+private ["_house","_houses","_gMkr", "_pos"];
 
 _pos = [position player] call WP_fnc_GetGridPos;
 _gMkr = str _pos;
@@ -12,6 +12,9 @@ if (markerColor _gMkr == "ColorRed") then
 		if (([getPosATL _house, 10, true, "count"] call SR_fnc_nearestEastMen) == 0) then
 		{
 			_gMkr setMarkerColor "ColorGreen";
+			if (DEBUG) then { systemChat format ["Zone Cleared: %1", _pos];	};
+			ActiveZones = ActiveZones - [_pos];
+			publicVariable "ActiveZones";
 		};
 	};
 };
