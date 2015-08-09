@@ -20,7 +20,7 @@ if (_hCount < 10) then { _inc = 3; };
 	if (markerColor _gMkr == "ColorRed") then   // make sure it's a red square
 	{
 		_hPos   = getPosATL _x;
-		_eCount = count nearestObjects[_hPos, ["Man"], 15];
+		_eCount = count nearestObjects[_pos, ["Man"], 15];
 		_wUnits =  [_hPos,SPAWNRANGE-200,true,"array"] call SR_fnc_nearestPlayers;
 		//_wUnits = nearestPlayers(_hPos,SPAWNRANGE-200,true,"array");
 		_wCount = count _wUnits;

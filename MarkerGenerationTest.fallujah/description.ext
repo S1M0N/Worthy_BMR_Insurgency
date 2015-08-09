@@ -1,1 +1,27 @@
+
+Respawn = 3;
+RespawnDelay = 5;
+RespawnDialog = 0;
+
+//Disable Ai
+disabledAI = true;
+
+//Disable Chat Channels {Global, Command, Vehicle, Direct}
+disableChannels[]={0,2,4,5};
+
+//Load Screen
+author = Worthy Platoon Mission Design Team;
+onLoadName = Worthy Insurgency;
+onLoadMission = Worthy Platoon - Campaign 5;
+//loadScreen = "Graphics\SplashScreen.paa";
+
+//Admin Control Panel and Console 0 - off, 1 - logged admin, 2 - everyone
 enableDebugConsole = 1;
+
+//Mission Header
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 2;
+};

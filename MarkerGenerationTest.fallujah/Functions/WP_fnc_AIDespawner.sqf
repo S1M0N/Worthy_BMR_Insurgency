@@ -16,6 +16,7 @@ private ["_pUnitCount","_zID","_e"];
 	{
 		// Despawn units in zone
 		{
+			_zID = (_x select 0);
 			_e = [_zID,_pos] call bis_fnc_areEqual;
 			if (_e) then
 			{
