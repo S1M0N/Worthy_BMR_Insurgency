@@ -26,14 +26,15 @@ class Mission
 	randomSeed=15827838;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
+		resistanceWest=0;
+		resistanceEast=1;
 		startWeather=0;
-		startWind=0.1;
-		startWaves=0.1;
+		startWind=0.099999994;
+		startWaves=0.099999994;
 		forecastWeather=0;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
 		year=2010;
 		month=1;
 		day=11;
@@ -110,7 +111,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5264.209,7,5132.4385};
+					position[]={5269.0024,7,5134.3145};
 					id=4;
 					side="LOGIC";
 					vehicle="Logic";
@@ -128,7 +129,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4980.1631,6.9900088,6750.8481};
+					position[]={5429.4438,7,9200.5791};
 					id=5;
 					side="LOGIC";
 					vehicle="Logic";
@@ -164,7 +165,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2566.6655,6.9907308,4793.4712};
+					position[]={3112.1028,6.9907308,4299.1904};
 					id=7;
 					side="LOGIC";
 					vehicle="Logic";
@@ -182,7 +183,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8474.1348,7,5307.147};
+					position[]={7838.7236,7,5322.3115};
 					id=8;
 					side="LOGIC";
 					vehicle="Logic";
@@ -200,7 +201,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3946.5281,6.9900079,1268.8608};
+					position[]={4043.3191,6.9900079,1454.6763};
 					id=9;
 					side="LOGIC";
 					vehicle="Logic";
@@ -337,7 +338,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={4431.2583,6.9900088,5812.6187};
@@ -364,6 +365,19 @@ class Mission
 			position[]={7934.6812,7,2113.8967};
 			name="respawn_west";
 			type="Empty";
+		};
+		class Item3
+		{
+			position[]={8149.2832,7,1847.1857};
+			name="exclude_location";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorWEST";
+			fillName="Border";
+			a=800;
+			b=450;
+			angle=-120.803;
+			drawBorder=1;
 		};
 	};
 };

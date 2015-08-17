@@ -28,7 +28,7 @@ private ["_pUnitCount","_zID","_e"];
 		} forEach ActiveGroups;
 
 		// Disable zone
-		if (DEBUG) then {systemChat format ["Deactiving Zone %1", _pos]; };
+		if (DEBUG) then { server globalChat format ["Deactiving Zone %1", _pos]; };
 		ActiveZones = ActiveZones - [_x];
 	};
 } forEach ActiveZones;

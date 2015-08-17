@@ -27,4 +27,10 @@ _buildingsArray = [_gzPos,_gzRad,3] call WP_fnc_FindHouses;
 	};
 } forEach _buildingsArray;
 publicVariable "markerArray";
+
+//pubBldArray = _buildingsArray;
+//publicVariable "pubBldArray";
+
+//copyToClipboard str(_buildingsArray);
+
 MarkerGenComplete = true;

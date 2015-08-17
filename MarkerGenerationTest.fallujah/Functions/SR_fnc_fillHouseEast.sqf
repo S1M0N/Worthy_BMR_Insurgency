@@ -54,7 +54,7 @@ for [{ _i=_ranSpawnPos},{ _i<((_nPos-1)+_ranSpawnPos)},{ _i=_i+_inc}] do
 		_ai = _grp createUnit [_class, spawnPos, [], 0, "NONE"];
 		_ai setPosATL _pos;
 
-		if (floor random 10 < 1) then			// %10 Chance of Intel Spawn
+		if ((floor random 10 < 1) || (DEBUG)) then			// %10 Chance of Intel Spawn
     	{
 			_evtID = _ai addEventHandler
 	    	[
@@ -63,7 +63,7 @@ for [{ _i=_ranSpawnPos},{ _i<((_nPos-1)+_ranSpawnPos)},{ _i=_i+_inc}] do
 	         		_intelType = ["Land_Suitcase_F","Land_Laptop_unfolded_F","Land_SatellitePhone_F"] call bis_fnc_selectRandom;
 	         		_aiPos = position (_this select 0);
 	                _intelDrop = createVehicle [_intelType, _aiPos, [], 0, 'CAN_COLLIDE'];
-	                if (DEBUG) then {systemChat format["Intel Dropped - Type %1", _intelType];};
+	                if (DEBUG) then { server globalChat format["Intel Dropped - Type %1", _intelType];};
 	                 _var = (_this select 0) getVariable ["IntelKilledEventID", -1];
                     if (_var != -1) then {
                         _this select 0 removeEventHandler ['Killed', _var];

@@ -70,7 +70,7 @@ KRON_deleteDead =
 KRON_AllWest=[];
 KRON_AllEast=[];
 KRON_AllRes=[];
-KRON_KnownEnemy=[objNull,objNull];
+KRON_KnownEnemy=[objNull,objNull,objNull];
 
 {
 	_s = side _x;

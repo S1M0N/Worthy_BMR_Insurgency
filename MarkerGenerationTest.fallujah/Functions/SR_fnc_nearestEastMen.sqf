@@ -20,4 +20,4 @@ for "_i" from 0 to (count _arr1 - 1) do {
 		};
 	} forEach (crew (_arr1 select _i));
 };
-_result;
+_result

@@ -26,10 +26,10 @@ if (_hCount < 10) then { _inc = 3; };
 		_wCount = count _wUnits;
 		// players need not to be within SPAWNRANGE-200 from a house or they need not to see the spawn position for its AI to spawn
 		//if (_eCount == 0 && (_wCount == 0 || !arrCanSee(_wUnits,_hPos,30,50))) then { [_x, _wCount, _inc] call SR_fnc_fillHouseEast; };
-		if (_eCount == 0 && !(_gMkr in ActiveZones)) then
+		if (_eCount == 0 && !(_pos in ActiveZones)) then
 		{
 			_grp = [_x, _wCount, _inc, _pos] call SR_fnc_fillHouseEast;
-			if (DEBUG) then { systemChat format ["Zone Activated: %1", _pos];};
+			if (DEBUG) then { server globalChat format ["Zone Activated: %1", _pos];};
 				if (!isNull _grp) then
 				{
 					ActiveGroups pushBack [_pos,_grp];

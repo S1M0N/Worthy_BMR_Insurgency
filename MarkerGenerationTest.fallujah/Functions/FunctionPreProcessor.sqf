@@ -15,7 +15,8 @@ SR_fnc_countPositions = compile preprocessFile "Functions\SR_fnc_countPositions.
 SR_fnc_clearHouses = compile preprocessFile "Functions\SR_fnc_clearHouses.sqf";
 SR_fnc_canSee = compile preprocessFile "Functions\SR_fnc_canSee.sqf";
 SR_fnc_arrCanSee = compile preprocessFile "Functions\SR_fnc_arrCanSee.sqf";
-//SR_fnc_spawnAIVehicle = compile preprocessFile "Functions\SR_fnc_spawnAIVehicle.sqf";
+SR_fnc_spawnAIVehicles = compile preprocessFile "Functions\SR_fnc_spawnAIVehicles.sqf";
+SR_fnc_spawnAIVehicle = compile preprocessFile "AI\SR_fnc_spawnAIVehicle.sqf";
 SR_fnc_getGroup = compile preprocessFile "Functions\SR_fnc_getGroup.sqf";
 SR_fnc_aiMonitor = compile preprocessFile "Functions\SR_fnc_aiMonitor.sqf";
 SR_fnc_findHousesFront = compileFinal preprocessFile "Functions\SR_fnc_findHousesFront.sqf";
@@ -24,6 +25,15 @@ SR_fnc_fillHouseEast = compile preprocessFile "Functions\SR_fnc_fillHouseEast.sq
 SR_fnc_aiSpawn = compile preprocessFile "Functions\SR_fnc_aiSpawn.sqf";
 SR_fnc_aiDespawn = compile preprocessFile "Functions\SR_fnc_aiDespawn.sqf";
 SR_fnc_setGrpNull = compile preprocessFile "Functions\SR_fnc_setGrpNull.sqf";
+SR_fnc_dbgMkr= compile preprocessFile "Functions\SR_fnc_dbgMkr.sqf";
+SR_fnc_setupCache = compile preprocessFile "Functions\SR_fnc_setupCache.sqf";
+SR_fnc_cacheKill = compile preprocessFile "Functions\SR_fnc_cacheKill.sqf";
+SR_fnc_getCacheMkrs = compile preprocessFile "Functions\SR_fnc_getCacheMkrs.sqf";
+SR_fnc_bldPos = compile preprocessFile "Functions\SR_fnc_bldPos.sqf";
+SR_fnc_getCaches = compile preprocessFile "Functions\SR_fnc_getCaches.sqf";
+SR_fnc_createFire = compile preprocessFile "Functions\SR_fnc_createFire.sqf";
+SR_fnc_createIntel = compile preprocessFile "Functions\SR_fnc_createIntel.sqf";
+SR_fnc_casePickup = compile preprocessFile "Functions\SR_fnc_casePickup.sqf";
 
 
 

@@ -7,7 +7,7 @@ try
 {
 	_buildings = nearestObjects [_this select 0, ["House"], _this select 1];
     _minPositions = (_this select 2) - 1;
-    _illegalHouses = ["Land_Mil_hangar_EP1", "Land_Mil_ControlTower_EP1", "Land_Mil_Guardhouse_EP1", "Land_Mil_Repair_center_EP1","Land_Mil_Barracks_i_EP1","Land_A_Minaret_EP1","Land_Ind_Coltan_Main_EP1"];
+    _illegalHouses = ["Land_Mil_hangar_EP1", "Land_Mil_ControlTower_EP1", "Land_Mil_Guardhouse_EP1", "Land_Mil_Repair_center_EP1","Land_Mil_Barracks_i_EP1","Land_A_Minaret_EP1","Land_Ind_Coltan_Main_EP1","Dum08"];
     _enterables = [];
     {
         if (format["%1", _x buildingPos _minPositions] != "[0,0,0]" && !(typeOf _x in _illegalHouses) && (alive _x) && (_x distance (getmarkerPos "exclude_location") > 1000 )) then

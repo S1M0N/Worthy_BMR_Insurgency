@@ -9,10 +9,10 @@ if (markerColor _gMkr == "ColorRed") then
 	if (count _houses > 0) then
 	{
 		_house = _houses select 0;
-		if (([getPosATL _house, 10, true, "count"] call SR_fnc_nearestEastMen) == 0) then
+		if (([getPosATL _house, 50, true, "count"] call SR_fnc_nearestEastMen) == 0) then
 		{
 			_gMkr setMarkerColor "ColorGreen";
-			if (DEBUG) then { systemChat format ["Zone Cleared: %1", _pos];	};
+			if (DEBUG) then { server globalChat format ["Zone Cleared: %1", _pos];	};
 			ActiveZones = ActiveZones - [_pos];
 			publicVariable "ActiveZones";
 		};

@@ -4,6 +4,9 @@ diag_log "============================================================ Mission R
 
 enableSaving [false,false];
 DEBUG = true;
+publicVariable "DEBUG";
+GlobalCacheArray = [];
+
 
 //Enable Function Libary
 execVM "Functions\FunctionPreProcessor.sqf";
@@ -12,15 +15,14 @@ waitUntil {missionNamespace getVariable "funcsProcessed";};
 
 execVM "Scripts\MarkerGenerator.sqf";
 
-if (local player) then
+if (!isDedicated) then
 {
+	waitUntil {!(isNull player)};
 	[] execVM "initclient.sqf";
 };
 
-if (isServer) then
+if (isServer || isDedicated) then
 {
-	//[] execVM "AI\spawnAI.sqf";
-	//call setupCaches;
 
 	if (isNil "ActiveZones") then
 	{
@@ -30,6 +32,7 @@ if (isServer) then
 	publicVariable "ActiveZones";
 	publicVariable "ActiveGroups";
 
+	execVM "setupCaches.sqf";
+	execVM "spawnVeh.sqf";
 	execVM "ServerMainLoop.sqf";
-
 };

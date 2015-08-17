@@ -61,9 +61,7 @@ nearestPlayers = {
 };
 
 #define nearestPlayers(W,X,Y,Z)	([W,X,Y,Z] call nearestPlayers)
-#define startLocation (getPosATL FieldHospital)
-
-
+#define startLocation       (getPosATL FieldHospital)
 
 // ---------------------------------------------------------------------------------------------------------
 //echo format["[K] %1",_this];

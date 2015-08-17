@@ -3,6 +3,19 @@ Master Defines file - Check each commented block for function that the Defines a
 */
 
 #define spawnPos [-2565.0364,6336.0854,14.531151]
+#define aoRadius 6200
+#define cacheType "Box_FIA_Ammo_F"
+#define cacheMarkers(X) ([X,[],0] call SR_fnc_getCacheMkrs)
+#define CENTERPOS [4349.44,4636.12,0]
+#define cacheRadius 500
+//#define cacheList ([[],0] call SR_fnc_getCaches)
+#define cacheCount 9
+#define intelType ["Land_Suitcase_F","Land_Laptop_unfolded_F","Land_SatellitePhone_F"]
+#define blockAmt 10
+#define intelMarkerType	"hd_unknown"
+#define intelRadius	400
+#define aiVehicleRespawnTime 300
+#define eastVehicleNum 15
 
 //initclient.sqf
 #define WestPlrCls ["B_Soldier_F"]
@@ -26,13 +39,14 @@ Master Defines file - Check each commented block for function that the Defines a
 #define getDirTo(X,Y) (((if(typeName Y == "OBJECT")then{getPosATL Y}else{Y} select 0) - (getPosATL X select 0)) atan2 ((if(typeName Y == "OBJECT")then{getPosATL Y}else{Y} select 1) - (getPosATL X select 1)))
 
 //SR_fnc_fillHouseEast & SR_fnc_nearestEastMen
-#define eastInfClasses ["O_medic_F","O_officer_F","O_Soldier_AA_F","O_Soldier_AR_F","O_Soldier_AT_F","O_soldier_exp_F","O_Soldier_F","O_Soldier_GL_F","O_Soldier_LAT_F","O_soldier_M_F","O_soldier_repair_F","O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_A_F"]
+#define eastInfClasses ["rhs_g_medic_F","rhs_g_Soldier_TL_F","rhs_g_Soldier_AA_F","rhs_g_Soldier_AR_F","rhs_g_Soldier_LAT_F","rhs_g_Soldier_exp_F","rhs_g_Soldier_F3","rhs_g_Soldier_GL_F","rhs_g_Soldier_AT_F","rhs_g_Soldier_M_F","rhs_g_engineer_F","O_Soldier_SL_F","rhs_g_Soldier_SL_F","rhs_g_Soldier_F2"]
 #define findSquadAIName(X) ([X,1] call SR_fnc_findSquadAIName)
 #define exitCondition (findSquadAIName(player) == "" || !alive player)
 #define nPos(X) ([X,0] call SR_fnc_countPositions)
 
 //SR_fnc_findHousesFront
-#define ILLEGALHOUSES		["land_nav_pier_c2_end", "Land_dum_olez_istan1", "Land_water_", "land_nav_pier_c", "Land_Nav_Boathouse_PierL", "Land_Nav_Boathouse_PierT", "Land_Nav_Boathouse_PierR", "Land_dum_olez_istan2", "Land_Shed_M03", "Land_dum_olez_istan2_maly", "Land_Shed_M01", "Land_hut06", "Land_Ind_SawMillPen", "land_nav_pier_c2", "Land_A_Crane_02a", "Land_vez", "Land_Ind_Expedice_1", "Land_Misc_Cargo1G", "Land_Ind_Stack_Big", "land_nav_pier_c_t15", "land_nav_pier_c_big", "Land_IndPipe2_big_18", "Land_Ind_Expedice_1", "Land_Ind_Expedice_3", "Land_IndPipe2_big_9","land_nav_pier_m_end", "land_nav_pier_m", "Land_Mil_hangar_EP1", "Land_Mil_ControlTower_EP1", "Land_Mil_Guardhouse_EP1", "Land_Mil_Repair_center_EP1","Land_Mil_Barracks_i_EP1","Land_A_Minaret_EP1","Land_Ind_Coltan_Main_EP1"]
+#define ILLEGALHOUSES ["land_nav_pier_c2_end","Land_dum_olez_istan1","Land_water_","land_nav_pier_c","Land_Nav_Boathouse_PierL","Land_Nav_Boathouse_PierT","Land_Nav_Boathouse_PierR","Land_dum_olez_istan2","Land_Shed_M03","Land_dum_olez_istan2_maly","Land_Shed_M01","Land_hut06","Land_Ind_SawMillPen","land_nav_pier_c2","Land_A_Crane_02a","Land_vez","Land_Ind_Expedice_1","Land_Misc_Cargo1G","Land_Ind_Stack_Big","land_nav_pier_c_t15","land_nav_pier_c_big","Land_IndPipe2_big_18","Land_Ind_Expedice_1","Land_Ind_Expedice_3","Land_IndPipe2_big_9","land_nav_pier_m_end","land_nav_pier_m","Land_Mil_hangar_EP1","Land_Mil_ControlTower_EP1","Land_Mil_Guardhouse_EP1","Land_Mil_Repair_center_EP1","Land_Mil_Barracks_i_EP1","Land_A_Minaret_EP1","Land_Ind_Coltan_Main_EP1"]
+
 
 #define EP1HOUSES true
 
@@ -44,9 +58,9 @@ Master Defines file - Check each commented block for function that the Defines a
 #define westPlrStr ["tester", "theOtherTester"]
 
 //SR_fnc_spawnAIVehicle & AI\spawnAI.sqf
-#define eastVehiclesFreq	["rhs_sprut_vdv","rhs_bmp1p_msv","rhs_brm1k_msv","rhs_bmp2_msv","rhs_bmp2e_msv","rhs_bmp2d_msv","rhs_bmp2k_msv","rhs_prp3_msv","rhs_bmd4_vdv","rhs_bmd4ma_vdv","rhs_t80u","rhs_t80bv","rhs_t80a","rhs_t72bc_tv","rhs_t72bb_tv","rhs_zsu234_aa"]
-#define eastLightVehicles	["O_MRAP_02_gmg_F","O_MRAP_02_hmg_F"]
-#define vclCrewClass		"rhs_msv_crew"
+#define eastVehiclesFreq	["rhs_btr70_chdkz","rhs_bmd2_chdkz","rhs_t72bb_chdkz","rhs_zsu234_aa"]
+#define eastLightVehicles	["RHS_UAZ_chdkz","RHS_UAZ_chdkz"]
+#define vclCrewClass		"rhs_g_Crew_F"
 #define eastRanks			["CAPTAIN","LIEUTENANT","SERGEANT","CORPORAL","PRIVATE"]
 
 
